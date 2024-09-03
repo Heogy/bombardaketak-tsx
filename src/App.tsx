@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Orainaldia from "./ariketak/nor-nork/Orainaldia";
+import NorNoriNork from './nor-nori-nork';
 
 function App() {
   return (
     <div className="App">
-      <Orainaldia />
+      <NorNoriNork />
     </div>
   );
 }

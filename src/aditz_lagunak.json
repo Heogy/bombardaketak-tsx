@@ -1,0 +1,866 @@
+[
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Niri",
+    "nork": "Hark",
+    "aditz_laguntzilea": "Dit",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Hari",
+    "nork": "Zuek",
+    "aditz_laguntzilea": "Dizkiozue",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Haiei",
+    "nork": "Guk",
+    "aditz_laguntzilea": "Dizkiegu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Haiek",
+    "nori": "",
+    "nork": "Guk",
+    "aditz_laguntzilea": "Ditugu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Niri",
+    "nork": "Haiek",
+    "aditz_laguntzilea": "Didate",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Guri",
+    "nork": "Zuek",
+    "aditz_laguntzilea": "Diguzue",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Zuei",
+    "nork": "Hark",
+    "aditz_laguntzilea": "Dizkizue",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori",
+    "nor": "Haiek",
+    "nori": "Guri",
+    "nork": "",
+    "aditz_laguntzilea": "Zaizkigu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Zu",
+    "nori": "",
+    "nork": "Haiek",
+    "aditz_laguntzilea": "Zaituzte",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Guri",
+    "nork": "Zuk",
+    "aditz_laguntzilea": "Diguzu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Hari",
+    "nork": "Zuek",
+    "aditz_laguntzilea": "Diozue",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Haiei",
+    "nork": "Zuk",
+    "aditz_laguntzilea": "Diezu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori",
+    "nor": "Hura",
+    "nori": "Haiei",
+    "nork": "",
+    "aditz_laguntzilea": "Zitzaien",
+    "denbora": "Lehenaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Hari",
+    "nork": "Nik",
+    "aditz_laguntzilea": "Diot",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Ni",
+    "nori": "",
+    "nork": "Zuk",
+    "aditz_laguntzilea": "Nauzu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Haiei",
+    "nork": "Zuk",
+    "aditz_laguntzilea": "Dizkiezu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Zuei",
+    "nork": "Guk",
+    "aditz_laguntzilea": "Dizuegu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Niri",
+    "nork": "Zuk",
+    "aditz_laguntzilea": "Didazu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Haiek",
+    "nori": "",
+    "nork": "Haiek",
+    "aditz_laguntzilea": "Dituzte",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori",
+    "nor": "Haiek",
+    "nori": "Hari",
+    "nork": "",
+    "aditz_laguntzilea": "Zitzaizkion",
+    "denbora": "Lehenaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Haiei",
+    "nork": "Zuek",
+    "aditz_laguntzilea": "Dizkiezue",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Zuri",
+    "nork": "Haiek",
+    "aditz_laguntzilea": "Dizkizute",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Zu",
+    "nori": "",
+    "nork": "Hark",
+    "aditz_laguntzilea": "Zaitu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori",
+    "nor": "Hura",
+    "nori": "Guri",
+    "nork": "",
+    "aditz_laguntzilea": "Zaigu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Guri",
+    "nork": "Haiek",
+    "aditz_laguntzilea": "Digute",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Zu",
+    "nori": "",
+    "nork": "Nik",
+    "aditz_laguntzilea": "Zaitut",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Zuri",
+    "nork": "Guk",
+    "aditz_laguntzilea": "Dizugu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Zuei",
+    "nork": "Haiek",
+    "aditz_laguntzilea": "Dizkizuete",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Zuek",
+    "nori": "",
+    "nork": "Nik",
+    "aditz_laguntzilea": "Zaituztet",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Haiei",
+    "nork": "Nik",
+    "aditz_laguntzilea": "Diet",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori",
+    "nor": "Hura",
+    "nori": "Niri",
+    "nork": "",
+    "aditz_laguntzilea": "Zitzaidan",
+    "denbora": "Lehenaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Hura",
+    "nori": "",
+    "nork": "Zuek",
+    "aditz_laguntzilea": "Duzue",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Haiei",
+    "nork": "Hark",
+    "aditz_laguntzilea": "Dizkie",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Zuek",
+    "nori": "",
+    "nork": "Guk",
+    "aditz_laguntzilea": "Zaituztegu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori",
+    "nor": "Hura",
+    "nori": "Zuri",
+    "nork": "",
+    "aditz_laguntzilea": "Zitzaizun",
+    "denbora": "Lehenaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Haiei",
+    "nork": "Zuek",
+    "aditz_laguntzilea": "Diezue",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Guri",
+    "nork": "Zuk",
+    "aditz_laguntzilea": "Dizkiguzu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori",
+    "nor": "Haiek",
+    "nori": "Zuei",
+    "nork": "",
+    "aditz_laguntzilea": "Zitzaizkizuen",
+    "denbora": "Lehenaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Zu",
+    "nori": "",
+    "nork": "Guk",
+    "aditz_laguntzilea": "Zaitugu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Niri",
+    "nork": "Haiek",
+    "aditz_laguntzilea": "Dizkidate",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Zuri",
+    "nork": "Haiek",
+    "aditz_laguntzilea": "Dizute",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Ni",
+    "nori": "",
+    "nork": "Hark",
+    "aditz_laguntzilea": "Nau",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Hari",
+    "nork": "Guk",
+    "aditz_laguntzilea": "Diogu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Zuek",
+    "nori": "",
+    "nork": "Haiek",
+    "aditz_laguntzilea": "Zaituztete",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Zuek",
+    "nori": "",
+    "nork": "Hark",
+    "aditz_laguntzilea": "Zaituzte",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Guri",
+    "nork": "Hark",
+    "aditz_laguntzilea": "Digu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Zuei",
+    "nork": "Nik",
+    "aditz_laguntzilea": "Dizuet",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Zuri",
+    "nork": "Guk",
+    "aditz_laguntzilea": "Dizkizugu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Hari",
+    "nork": "Haiek",
+    "aditz_laguntzilea": "Diote",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Haiei",
+    "nork": "Hark",
+    "aditz_laguntzilea": "Die",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Hura",
+    "nori": "",
+    "nork": "Zuk",
+    "aditz_laguntzilea": "Duzu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Hari",
+    "nork": "Zuk",
+    "aditz_laguntzilea": "Dizkiozu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Hari",
+    "nork": "Nik",
+    "aditz_laguntzilea": "Dizkiot",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Gu",
+    "nori": "",
+    "nork": "Zuk",
+    "aditz_laguntzilea": "Gaituzu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Guri",
+    "nork": "Zuek",
+    "aditz_laguntzilea": "Dizkiguzue",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori",
+    "nor": "Haiek",
+    "nori": "Hari",
+    "nork": "",
+    "aditz_laguntzilea": "Zaizkio",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Zuri",
+    "nork": "Hark",
+    "aditz_laguntzilea": "Dizkizu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Haiei",
+    "nork": "Guk",
+    "aditz_laguntzilea": "Diegu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Hura",
+    "nori": "",
+    "nork": "Nik",
+    "aditz_laguntzilea": "Dut",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Hura",
+    "nori": "",
+    "nork": "Hark",
+    "aditz_laguntzilea": "Du",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Ni",
+    "nori": "",
+    "nork": "Zuek",
+    "aditz_laguntzilea": "Nauzue",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Zuei",
+    "nork": "Guk",
+    "aditz_laguntzilea": "Dizkizuegu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Haiek",
+    "nori": "",
+    "nork": "Zuk",
+    "aditz_laguntzilea": "Dituzu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Ni",
+    "nori": "",
+    "nork": "Haiek",
+    "aditz_laguntzilea": "Naute",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Zuei",
+    "nork": "Nik",
+    "aditz_laguntzilea": "Dizkizuet",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Haiek",
+    "nori": "",
+    "nork": "Hark",
+    "aditz_laguntzilea": "Ditu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Niri",
+    "nork": "Zuek",
+    "aditz_laguntzilea": "Didazue",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Gu",
+    "nori": "",
+    "nork": "Zuek",
+    "aditz_laguntzilea": "Gaituzue",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Hura",
+    "nori": "",
+    "nork": "Haiek",
+    "aditz_laguntzilea": "Dute",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Hari",
+    "nork": "Hark",
+    "aditz_laguntzilea": "Dizkio",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Haiei",
+    "nork": "Haiek",
+    "aditz_laguntzilea": "Dizkiete",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Haiek",
+    "nori": "",
+    "nork": "Nik",
+    "aditz_laguntzilea": "Ditut",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori",
+    "nor": "Hura",
+    "nori": "Zuei",
+    "nork": "",
+    "aditz_laguntzilea": "Zaizue",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Zuei",
+    "nork": "Hark",
+    "aditz_laguntzilea": "Dizue",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Hari",
+    "nork": "Guk",
+    "aditz_laguntzilea": "Dizkiogu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori",
+    "nor": "Hura",
+    "nori": "Hari",
+    "nork": "",
+    "aditz_laguntzilea": "Zitzaion",
+    "denbora": "Lehenaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Guri",
+    "nork": "Haiek",
+    "aditz_laguntzilea": "Dizkgute",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Hari",
+    "nork": "Hark",
+    "aditz_laguntzilea": "Dio",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Zuri",
+    "nork": "Hark",
+    "aditz_laguntzilea": "Dizu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori",
+    "nor": "Haiek",
+    "nori": "Zuri",
+    "nork": "",
+    "aditz_laguntzilea": "Zaizkizu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Zuri",
+    "nork": "Nik",
+    "aditz_laguntzilea": "Dizut",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Niri",
+    "nork": "Hark",
+    "aditz_laguntzilea": "Dizkit",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori",
+    "nor": "Haiek",
+    "nori": "Zuei",
+    "nork": "",
+    "aditz_laguntzilea": "Zaizkizue",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Hura",
+    "nori": "",
+    "nork": "Guk",
+    "aditz_laguntzilea": "Dugu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori",
+    "nor": "Haiek",
+    "nori": "Haiei",
+    "nork": "",
+    "aditz_laguntzilea": "Zaizkie",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Hari",
+    "nork": "Zuk",
+    "aditz_laguntzilea": "Diozu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Haiei",
+    "nork": "Haiek",
+    "aditz_laguntzilea": "Diete",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Niri",
+    "nork": "Zuk",
+    "aditz_laguntzilea": "Dizkidazu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Zuri",
+    "nork": "Nik",
+    "aditz_laguntzilea": "Dizkizut",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori",
+    "nor": "Haiek",
+    "nori": "Haiei",
+    "nork": "",
+    "aditz_laguntzilea": "Zitzaizkien",
+    "denbora": "Lehenaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Niri",
+    "nork": "Zuek",
+    "aditz_laguntzilea": "Dizkidazue",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori",
+    "nor": "Haiek",
+    "nori": "Niri",
+    "nork": "",
+    "aditz_laguntzilea": "Zitzazkidan",
+    "denbora": "Lehenaldia"
+  },
+  {
+    "forme": "nor_nori",
+    "nor": "Haiek",
+    "nori": "Guri",
+    "nork": "",
+    "aditz_laguntzilea": "Zitzaizkigun",
+    "denbora": "Lehenaldia"
+  },
+  {
+    "forme": "nor_nori",
+    "nor": "Hura",
+    "nori": "Niri",
+    "nork": "",
+    "aditz_laguntzilea": "Zait",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori",
+    "nor": "Haiek",
+    "nori": "Niri",
+    "nork": "",
+    "aditz_laguntzilea": "Zaizkit",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Haiei",
+    "nork": "Nik",
+    "aditz_laguntzilea": "Dizkiet",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Hari",
+    "nork": "Haiek",
+    "aditz_laguntzilea": "Dizkiote",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Haiek",
+    "nori": "Guri",
+    "nork": "Hark",
+    "aditz_laguntzilea": "Dizkigu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Gu",
+    "nori": "",
+    "nork": "Haiek",
+    "aditz_laguntzilea": "Gaituzte",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori",
+    "nor": "Hura",
+    "nori": "Haiei",
+    "nork": "",
+    "aditz_laguntzilea": "Zaie",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori_nork",
+    "nor": "Hura",
+    "nori": "Zuei",
+    "nork": "Haiek",
+    "aditz_laguntzilea": "Dizuete",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori",
+    "nor": "Hura",
+    "nori": "Hari",
+    "nork": "",
+    "aditz_laguntzilea": "Zaio",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori",
+    "nor": "Hura",
+    "nori": "Zuei",
+    "nork": "",
+    "aditz_laguntzilea": "Zitzaizuen",
+    "denbora": "Lehenaldia"
+  },
+  {
+    "forme": "nor_nori",
+    "nor": "Hura",
+    "nori": "Guri",
+    "nork": "",
+    "aditz_laguntzilea": "Zitzaigun",
+    "denbora": "Lehenaldia"
+  },
+  {
+    "forme": "nor_nori",
+    "nor": "Hura",
+    "nori": "Zuri",
+    "nork": "",
+    "aditz_laguntzilea": "Zaizu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Haiek",
+    "nori": "",
+    "nork": "Zuek",
+    "aditz_laguntzilea": "Dituzue",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nork",
+    "nor": "Gu",
+    "nori": "",
+    "nork": "Hark",
+    "aditz_laguntzilea": "Gaitu",
+    "denbora": "Orainaldia"
+  },
+  {
+    "forme": "nor_nori",
+    "nor": "Haiek",
+    "nori": "Zuri",
+    "nork": "",
+    "aditz_laguntzilea": "Zitzaizkizun",
+    "denbora": "Lehenaldia"
+  }
+]
