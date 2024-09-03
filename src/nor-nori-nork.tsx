@@ -15,9 +15,9 @@ interface DataItem {
 
 
 const NorNoriNork: React.FC = () => {
-  const [nor, setNor] = useState<string>("");
-  const [nori, setNori] = useState<string>("");
-  const [nork, setNork] = useState<string>("");
+  const [nor, setNor] = useState<string>("Haiek");
+  const [nori, setNori] = useState<string>("Guri");
+  const [nork, setNork] = useState<string>("Zuek");
   const [aditzLaguntzailea, setAditzLaguntzailea] = useState<any | null>(null);
 
   useEffect(() => {
@@ -33,9 +33,9 @@ const NorNoriNork: React.FC = () => {
     setAditzLaguntzailea(item || null);
   }, [nor, nori, nork]);
 
-  const norList: string[] = Array.from(new Set(aditzLaguntzaileak.map((item) => item.nor)));
-  const noriList: string[] = Array.from(new Set(aditzLaguntzaileak.map((item) => item.nori)));
-  const norkList: string[] = Array.from(new Set(aditzLaguntzaileak.map((item) => item.nork)));
+  const norList: string[] = ['Ni', 'Zu', 'Hura', 'Gu', 'Zuek', 'Haiek'];
+  const noriList: string[] = ['Niri', 'Zuri', 'Hari', 'Guri', 'Zuei', 'Haiei', ''];
+  const norkList: string[] = ['Nik', 'Zuk', 'Hark', 'Guk', 'Zuek', 'Haiek', ''];
 
   return (
     <div>
