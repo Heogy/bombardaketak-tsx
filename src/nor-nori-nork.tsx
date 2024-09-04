@@ -4,38 +4,30 @@ import aditzLaguntzaileak from './aditz_lagunak.json';
 console.log(aditzLaguntzaileak)
 aditzLaguntzaileak.forEach((item) => console.log(item))
 
-// Define the type for each item in your JSON data
-interface DataItem {
-  category1: string;
-  category2: string;
-  category3: string;
-  details: string;
-}
-
-
-
 const NorNoriNork: React.FC = () => {
   const [nor, setNor] = useState<string>("Haiek");
   const [nori, setNori] = useState<string>("Guri");
   const [nork, setNork] = useState<string>("Zuek");
+  const [denbora, setDenbora] = useState<string>("Orainaldia");
   const [aditzLaguntzailea, setAditzLaguntzailea] = useState<any | null>(null);
 
   useEffect(() => {
-    console.log(`try to find ${nor} ${nori} ${nork}`)
+    console.log(`try to find ${nor} ${nori} ${nork} ${denbora}`)
     const item = aditzLaguntzaileak.find(
       (item: any) =>
         item.nor === nor &&
         item.nori === nori &&
         item.nork === nork &&
-        item.denbora === 'Orainaldia'
+        item.denbora === denbora
     );
     console.log(item)
     setAditzLaguntzailea(item || null);
-  }, [nor, nori, nork]);
+  }, [nor, nori, nork, denbora]);
 
   const norList: string[] = ['Ni', 'Zu', 'Hura', 'Gu', 'Zuek', 'Haiek'];
   const noriList: string[] = ['Niri', 'Zuri', 'Hari', 'Guri', 'Zuei', 'Haiei', ''];
   const norkList: string[] = ['Nik', 'Zuk', 'Hark', 'Guk', 'Zuek', 'Haiek', ''];
+  const denboraList: string[] = ['Orainaldia', 'Lehenaldia'];
   // Inline styles for the component
   const styles = {
     container: {
@@ -99,6 +91,16 @@ const NorNoriNork: React.FC = () => {
         <select value={nork} onChange={(e) => setNork(e.target.value)} style={styles.select}>
           <option value="" disabled style={styles.placeholder}>Nork</option>
           {norkList.map((item, index) => (
+            <option key={index} value={item}>{item}</option>
+          ))}
+        </select>
+      </div>
+
+      <div>
+        <label style={styles.label}>Denbora: </label>
+        <select value={denbora} onChange={(e) => setDenbora(e.target.value)} style={styles.select}>
+          <option value="" disabled style={styles.placeholder}>Denbora</option>
+          {denboraList.map((item, index) => (
             <option key={index} value={item}>{item}</option>
           ))}
         </select>
