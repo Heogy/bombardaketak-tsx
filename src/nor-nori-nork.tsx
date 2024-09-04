@@ -36,13 +36,48 @@ const NorNoriNork: React.FC = () => {
   const norList: string[] = ['Ni', 'Zu', 'Hura', 'Gu', 'Zuek', 'Haiek'];
   const noriList: string[] = ['Niri', 'Zuri', 'Hari', 'Guri', 'Zuei', 'Haiei', ''];
   const norkList: string[] = ['Nik', 'Zuk', 'Hark', 'Guk', 'Zuek', 'Haiek', ''];
+  // Inline styles for the component
+  const styles = {
+    container: {
+      maxWidth: '400px',
+      margin: '0 auto',
+      padding: '20px',
+      borderRadius: '8px',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+      backgroundColor: '#f9f9f9',
+    },
+    label: {
+      display: 'block',
+      marginBottom: '5px',
+      fontWeight: 'bold',
+      color: '#333',
+    },
+    select: {
+      width: '100%',
+      padding: '8px',
+      marginBottom: '15px',
+      borderRadius: '4px',
+      border: '1px solid #ccc',
+      backgroundColor: '#fff',
+    },
+    details: {
+      marginTop: '20px',
+      padding: '10px',
+      borderRadius: '4px',
+      backgroundColor: '#e0f7fa',
+      color: '#00796b',
+    },
+    placeholder: {
+      color: '#888',
+    },
+  };
 
   return (
-    <div>
+    <div style={styles.container}>
       <div>
-        <label>Nor: </label>
-        <select value={nor} onChange={(e) => setNor(e.target.value)}>
-          <option value="" disabled>Nor</option>
+        <label style={styles.label}>Nor: </label>
+        <select value={nor} onChange={(e) => setNor(e.target.value)} style={styles.select}>
+          <option value="" disabled style={styles.placeholder}>Nor</option>
           {norList.map((item, index) => (
             <option key={index} value={item}>{item}</option>
           ))}
@@ -50,9 +85,9 @@ const NorNoriNork: React.FC = () => {
       </div>
 
       <div>
-        <label>Nori: </label>
-        <select value={nori} onChange={(e) => setNori(e.target.value)}>
-          <option value="" disabled>Nori</option>
+        <label style={styles.label}>Nori: </label>
+        <select value={nori} onChange={(e) => setNori(e.target.value)} style={styles.select}>
+          <option value="" disabled style={styles.placeholder}>Nori</option>
           {noriList.map((item, index) => (
             <option key={index} value={item}>{item}</option>
           ))}
@@ -60,21 +95,21 @@ const NorNoriNork: React.FC = () => {
       </div>
 
       <div>
-        <label>Nork: </label>
-        <select value={nork} onChange={(e) => setNork(e.target.value)}>
-          <option value="" disabled>Nork</option>
+        <label style={styles.label}>Nork: </label>
+        <select value={nork} onChange={(e) => setNork(e.target.value)} style={styles.select}>
+          <option value="" disabled style={styles.placeholder}>Nork</option>
           {norkList.map((item, index) => (
             <option key={index} value={item}>{item}</option>
           ))}
         </select>
       </div>
 
-      <div>
+      <div style={styles.details}>
         <h3>Aditz laguntzailea :</h3>
         {aditzLaguntzailea ?
-          <p>{aditzLaguntzailea.aditz_laguntzilea}</p>
+          <p style={styles.placeholder}>{aditzLaguntzailea.aditz_laguntzilea}</p>
           :
-          <p>'ez da'</p>
+          <p>ez da</p>
         }
       </div>
     </div>
