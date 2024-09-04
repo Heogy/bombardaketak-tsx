@@ -30,6 +30,13 @@ const NorNoriNork: React.FC = () => {
   const denboraList: string[] = ['Orainaldia', 'Lehenaldia'];
   // Inline styles for the component
   const styles = {
+    outerContainer: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      minHeight: '100vh',
+      backgroundColor: '#f0f0f0',
+    },
     container: {
       maxWidth: '400px',
       margin: '0 auto',
@@ -65,54 +72,56 @@ const NorNoriNork: React.FC = () => {
   };
 
   return (
-    <div style={styles.container}>
-      <div>
-        <label style={styles.label}>Nor: </label>
-        <select value={nor} onChange={(e) => setNor(e.target.value)} style={styles.select}>
-          <option value="" disabled style={styles.placeholder}>Nor</option>
-          {norList.map((item, index) => (
-            <option key={index} value={item}>{item}</option>
-          ))}
-        </select>
-      </div>
+    <div style={styles.outerContainer}>
+      <div style={styles.container}>
+        <div>
+          <label style={styles.label}>Nor: </label>
+          <select value={nor} onChange={(e) => setNor(e.target.value)} style={styles.select}>
+            <option value="" disabled style={styles.placeholder}>Nor</option>
+            {norList.map((item, index) => (
+              <option key={index} value={item}>{item}</option>
+            ))}
+          </select>
+        </div>
 
-      <div>
-        <label style={styles.label}>Nori: </label>
-        <select value={nori} onChange={(e) => setNori(e.target.value)} style={styles.select}>
-          <option value="" disabled style={styles.placeholder}>Nori</option>
-          {noriList.map((item, index) => (
-            <option key={index} value={item}>{item}</option>
-          ))}
-        </select>
-      </div>
+        <div>
+          <label style={styles.label}>Nori: </label>
+          <select value={nori} onChange={(e) => setNori(e.target.value)} style={styles.select}>
+            <option value="" disabled style={styles.placeholder}>Nori</option>
+            {noriList.map((item, index) => (
+              <option key={index} value={item}>{item}</option>
+            ))}
+          </select>
+        </div>
 
-      <div>
-        <label style={styles.label}>Nork: </label>
-        <select value={nork} onChange={(e) => setNork(e.target.value)} style={styles.select}>
-          <option value="" disabled style={styles.placeholder}>Nork</option>
-          {norkList.map((item, index) => (
-            <option key={index} value={item}>{item}</option>
-          ))}
-        </select>
-      </div>
+        <div>
+          <label style={styles.label}>Nork: </label>
+          <select value={nork} onChange={(e) => setNork(e.target.value)} style={styles.select}>
+            <option value="" disabled style={styles.placeholder}>Nork</option>
+            {norkList.map((item, index) => (
+              <option key={index} value={item}>{item}</option>
+            ))}
+          </select>
+        </div>
 
-      <div>
-        <label style={styles.label}>Denbora: </label>
-        <select value={denbora} onChange={(e) => setDenbora(e.target.value)} style={styles.select}>
-          <option value="" disabled style={styles.placeholder}>Denbora</option>
-          {denboraList.map((item, index) => (
-            <option key={index} value={item}>{item}</option>
-          ))}
-        </select>
-      </div>
+        <div>
+          <label style={styles.label}>Denbora: </label>
+          <select value={denbora} onChange={(e) => setDenbora(e.target.value)} style={styles.select}>
+            <option value="" disabled style={styles.placeholder}>Denbora</option>
+            {denboraList.map((item, index) => (
+              <option key={index} value={item}>{item}</option>
+            ))}
+          </select>
+        </div>
 
-      <div style={styles.details}>
-        <h3>Aditz laguntzailea :</h3>
-        {aditzLaguntzailea ?
-          <p style={styles.placeholder}>{aditzLaguntzailea.aditz_laguntzilea}</p>
-          :
-          <p>ez da</p>
-        }
+        <div style={styles.details}>
+          <h3>Aditz laguntzailea :</h3>
+          {aditzLaguntzailea ?
+            <p style={styles.placeholder}>{aditzLaguntzailea.aditz_laguntzilea}</p>
+            :
+            <p>ez da</p>
+          }
+        </div>
       </div>
     </div>
   );
