@@ -1,25 +1,66 @@
 import React, { useState, useEffect } from "react";
 import aditzLaguntzaileak from './aditz_lagunak.json';
 
-console.log(aditzLaguntzaileak)
-aditzLaguntzaileak.forEach((item) => console.log(item))
+
+
 
 const NorNoriNork: React.FC = () => {
   const [nor, setNor] = useState<string>("Haiek");
   const [nori, setNori] = useState<string>("Guri");
   const [nork, setNork] = useState<string>("Zuek");
   const [denbora, setDenbora] = useState<string>("Orainaldia");
-  const [aditzLaguntzailea, setAditzLaguntzailea] = useState<any | null>(null);
+  const [forma, setForma] = useState<string>("Nor");
+
+  const [aditzLaguntzailea, setAditzLaguntzailea] = useState<string>("");
+
+  const changeForm = (value: string) => {
+    setForma(value);
+    setNor("")
+    setNori("")
+    setNork("");
+    console.log("nor " + nor)
+    console.log("nori " + nori)
+    console.log("nork " + nork)
+    console.log("forma " + forma)
+    console.log("denbora " + denbora)
+  }
 
   useEffect(() => {
-    console.log(`try to find ${nor} ${nori} ${nork} ${denbora}`)
-    const item = aditzLaguntzaileak.find(
-      (item: any) =>
-        item.nor === nor &&
-        item.nori === nori &&
-        item.nork === nork &&
-        item.denbora === denbora
-    );
+    console.log(`try to find ${nor} ${nori} ${nork} ${denbora} ${forma}`)
+    var item: any;
+    if (forma === "nor"){
+          // item = aditzLaguntzaileak.nor.find( // todo add nor aditz laguntzaileak
+          //   (item: any) => {
+          //     item.nor === nor &&
+          //       item.denbora === denbora
+          //   }
+          // )?.aditz_lagunzailea;
+    }else if (forma === "nor_nori"){
+      item = aditzLaguntzaileak.nor_nori.find(
+        (item: any) => 
+          item.nor === nor &&
+          item.nori === nori &&
+          item.denbora === denbora
+        
+      )?.aditz_lagunzailea;
+    }else if (forma === "nor_nork"){
+      item = aditzLaguntzaileak.nor_nork.find(
+        (item: any) => 
+          item.nor === nor &&
+          item.nork === nork &&
+            item.denbora === denbora
+        
+      )?.aditz_lagunzailea;
+    }else if (forma === "nor_nori_nork"){
+      item = aditzLaguntzaileak.nor_nori_nork.find(
+        (item: any) => 
+          item.nor === nor &&
+          item.nork === nork &&
+          item.nori === nori &&
+          item.denbora === denbora
+        
+      )?.aditz_lagunzailea;
+    }
     console.log(item)
     setAditzLaguntzailea(item || null);
   }, [nor, nori, nork, denbora]);
@@ -28,6 +69,10 @@ const NorNoriNork: React.FC = () => {
   const noriList: string[] = ['Niri', 'Zuri', 'Hari', 'Guri', 'Zuei', 'Haiei', ''];
   const norkList: string[] = ['Nik', 'Zuk', 'Hark', 'Guk', 'Zuek', 'Haiek', ''];
   const denboraList: string[] = ['Orainaldia', 'Lehenaldia'];
+  const formaList: string[] = ['nor', 'nor_nori', 'nor_nork', 'nor_nori_nork'];
+
+
+
   // Inline styles for the component
   const styles = {
     outerContainer: {
@@ -66,6 +111,13 @@ const NorNoriNork: React.FC = () => {
       backgroundColor: '#e0f7fa',
       color: '#00796b',
     },
+    detailsError: {
+      marginTop: '20px',
+      padding: '10px',
+      borderRadius: '4px',
+      backgroundColor: '#e0f7fa',
+      color: 'red',
+    },
     placeholder: {
       color: '#888',
     },
@@ -75,30 +127,10 @@ const NorNoriNork: React.FC = () => {
     <div style={styles.outerContainer}>
       <div style={styles.container}>
         <div>
-          <label style={styles.label}>Nor: </label>
-          <select value={nor} onChange={(e) => setNor(e.target.value)} style={styles.select}>
-            <option value="" disabled style={styles.placeholder}>Nor</option>
-            {norList.map((item, index) => (
-              <option key={index} value={item}>{item}</option>
-            ))}
-          </select>
-        </div>
-
-        <div>
-          <label style={styles.label}>Nori: </label>
-          <select value={nori} onChange={(e) => setNori(e.target.value)} style={styles.select}>
-            <option value="" disabled style={styles.placeholder}>Nori</option>
-            {noriList.map((item, index) => (
-              <option key={index} value={item}>{item}</option>
-            ))}
-          </select>
-        </div>
-
-        <div>
-          <label style={styles.label}>Nork: </label>
-          <select value={nork} onChange={(e) => setNork(e.target.value)} style={styles.select}>
-            <option value="" disabled style={styles.placeholder}>Nork</option>
-            {norkList.map((item, index) => (
+          <label style={styles.label}>Forma: </label>
+          <select value={forma} onChange={(e) => changeForm(e.target.value)} style={styles.select}>
+            <option value="" disabled style={styles.placeholder}>Forma</option>
+            {formaList.map((item, index) => (
               <option key={index} value={item}>{item}</option>
             ))}
           </select>
@@ -114,12 +146,46 @@ const NorNoriNork: React.FC = () => {
           </select>
         </div>
 
+        <div>
+          <label style={styles.label}>Nor: </label>
+          <select value={nor} onChange={(e) => setNor(e.target.value)} style={styles.select}>
+            <option value="" disabled style={styles.placeholder}>Nor</option>
+            {norList.map((item, index) => (
+              <option key={index} value={item}>{item}</option>
+            ))}
+          </select>
+        </div>
+        {
+          ['nor_nori', 'nor_nori_nork'].includes(forma) ?
+            <div>
+              <label style={styles.label}>Nori: </label>
+              <select value={nori} onChange={(e) => setNori(e.target.value)} style={styles.select}>
+                <option value="" disabled style={styles.placeholder}>Nori</option>
+                {noriList.map((item, index) => (
+                  <option key={index} value={item}>{item}</option>
+                ))}
+              </select>
+            </div>
+            : null}
+        {
+          ['nor_nork', 'nor_nori_nork'].includes(forma) ?
+            <div>
+              <label style={styles.label}>Nork: </label>
+              <select value={nork} onChange={(e) => setNork(e.target.value)} style={styles.select}>
+                <option value="" disabled style={styles.placeholder}>Nork</option>
+                {norkList.map((item, index) => (
+                  <option key={index} value={item}>{item}</option>
+                ))}
+              </select>
+            </div>
+            : null}
+
         <div style={styles.details}>
           <h3>Aditz laguntzailea :</h3>
           {aditzLaguntzailea ?
-            <p style={styles.placeholder}>{aditzLaguntzailea.aditz_laguntzilea}</p>
+            <p style={styles.placeholder}>{aditzLaguntzailea}</p>
             :
-            <p>ez da</p>
+            <p>Ez da</p>
           }
         </div>
       </div>
