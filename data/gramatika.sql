@@ -1,40 +1,60 @@
 BEGIN;
 
-CREATE TABLE nor (
+CREATE TABLE nor_io (
     nor TEXT PRIMARY KEY
 );
-Insert into nor (nor) values ('Ni');
-Insert into nor (nor) values ('Hura');
-Insert into nor (nor) values ('Gu');
-Insert into nor (nor) values ('Zu');
-Insert into nor (nor) values ('Zuek');
-Insert into nor (nor) values ('Haiek');
 
-CREATE TABLE nori (
+Insert into nor_io (nor) values ('Ni');
+Insert into nor_io (nor) values ('Hura');
+Insert into nor_io (nor) values ('Gu');
+Insert into nor_io (nor) values ('Zu');
+Insert into nor_io (nor) values ('Zuek');
+Insert into nor_io (nor) values ('Haiek');
+
+CREATE TABLE nori_io (
     nori TEXT PRIMARY KEY
 );
-Insert into nori (nori) values ('Niri');
-Insert into nori (nori) values ('Hari');
-Insert into nori (nori) values ('Guri');
-Insert into nori (nori) values ('Zuri');
-Insert into nori (nori) values ('Zuei');
-Insert into nori (nori) values ('Haiei');
 
-CREATE TABLE nork (
+Insert into nori_io (nori) values ('Niri');
+Insert into nori_io (nori) values ('Hari');
+Insert into nori_io (nori) values ('Guri');
+Insert into nori_io (nori) values ('Zuri');
+Insert into nori_io (nori) values ('Zuei');
+Insert into nori_io (nori) values ('Haiei');
+
+CREATE TABLE nork_io (
     nork TEXT PRIMARY KEY
 );
-Insert into nork (nork) values ('Nik');
-Insert into nork (nork) values ('Hark');
-Insert into nork (nork) values ('Guk');
-Insert into nork (nork) values ('Zuk');
-Insert into nork (nork) values ('Zuek');
-Insert into nork (nork) values ('Haiek');
+
+Insert into nork_io (nork) values ('Nik');
+Insert into nork_io (nork) values ('Hark');
+Insert into nork_io (nork) values ('Guk');
+Insert into nork_io (nork) values ('Zuk');
+Insert into nork_io (nork) values ('Zuek');
+Insert into nork_io (nork) values ('Haiek');
 
 CREATE TABLE denbora (
     denbora TEXT PRIMARY KEY
 );
+
 Insert into denbora (denbora) values ('Orainaldia');
 Insert into denbora (denbora) values ('Lehenaldia');
+
+create table nor (
+    nor TEXT,
+    denbora TEXT,
+    aditz_lagunzailea TEXT,
+    PRIMARY KEY (nor, denbora),
+    FOREIGN KEY (nor) REFERENCES nor_io(nor),
+    FOREIGN KEY (denbora) REFERENCES denbora(denbora)
+);
+
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Ni', 'Naiz', 'Orainaldia');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zu', 'Zara', 'Orainaldia');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Hura', 'Da', 'Orainaldia');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Gu', 'Gara', 'Orainaldia');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zuek', 'Zarete', 'Orainaldia');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Haiek', 'Dira', 'Orainaldia');
 
 Create table nor_nork (
     nor TEXT,
@@ -42,8 +62,8 @@ Create table nor_nork (
     denbora TEXT,
     aditz_lagunzailea TEXT,
     PRIMARY KEY (nor, nork, denbora),
-    FOREIGN KEY (nor) REFERENCES nor(nor),
-    FOREIGN KEY (nork) REFERENCES nork(nork),
+    FOREIGN KEY (nor) REFERENCES nor_io(nor),
+    FOREIGN KEY (nork) REFERENCES nork_io(nork),
     FOREIGN KEY (denbora) REFERENCES denbora(denbora)
 );
 
@@ -81,21 +101,14 @@ Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Z
 Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Zuek', 'Dituzue', 'Orainaldia');
 Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Haiek', 'Dituzte', 'Orainaldia');
 
-
-
-
-
-
-
-
 Create table nor_nori (
     nor TEXT,
     nori TEXT,
     denbora TEXT,
     aditz_lagunzailea TEXT,
     PRIMARY KEY (nor, nori, denbora),
-    FOREIGN KEY (nor) REFERENCES nor(nor),
-    FOREIGN KEY (nori) REFERENCES nori(nori),
+    FOREIGN KEY (nor) REFERENCES nor_io(nor),
+    FOREIGN KEY (nori) REFERENCES nori_io(nori),
     FOREIGN KEY (denbora) REFERENCES denbora(denbora)
 );
 
@@ -135,15 +148,15 @@ Create table nor_nori_nork (
     denbora TEXT,
     aditz_lagunzailea TEXT,
     PRIMARY KEY (nor, nori, nork, denbora),
-    FOREIGN KEY (nor) REFERENCES nor(nor),
-    FOREIGN KEY (nori) REFERENCES nori(nori),
-    FOREIGN KEY (nork) REFERENCES nork(nork),
+    FOREIGN KEY (nor) REFERENCES nor_io(nor),
+    FOREIGN KEY (nori) REFERENCES nori_io(nori),
+    FOREIGN KEY (nork) REFERENCES nork_io(nork),
     FOREIGN KEY (denbora) REFERENCES denbora(denbora)
 );
 
 Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Hari', 'Nik', 'Diot', 'Orainaldia');
 Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuri', 'Nik', 'Dizut', 'Orainaldia');
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuei', 'Nik', 'Dizuet', 'Orainaldia');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zueri', 'Nik', 'Dizuet', 'Orainaldia');
 Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Haiei', 'Nik', 'Diet', 'Orainaldia');
 
 Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Hari', 'Nik', 'Dizkiot', 'Orainaldia');

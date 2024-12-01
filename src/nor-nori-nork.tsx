@@ -1,17 +1,33 @@
 import React, { useState, useEffect } from "react";
 import aditzLaguntzaileak from './aditz_lagunak.json';
 
+interface struc {
+  nor: string,
+  nori?: string,
+  nork?: string;
+  denbora: string,
+  aditz_lagunzailea: string,
+  forma: string
+}
 
 
+
+const all: struc[] = [
+  ...(aditzLaguntzaileak.nor.map(a => { return { ...a, forma: 'nor' } })),
+  ...(aditzLaguntzaileak.nor_nori.map(a => { return { ...a, forma: 'nor_nori' } })),
+  ...(aditzLaguntzaileak.nor_nork.map(a => { return { ...a, forma: 'nor_nork' } })),
+  ...(aditzLaguntzaileak.nor_nori_nork.map(a => { return { ...a, forma: 'nor_nori_nork' } })),
+
+]
 
 const NorNoriNork: React.FC = () => {
   const [nor, setNor] = useState<string>("Haiek");
   const [nori, setNori] = useState<string>("Guri");
   const [nork, setNork] = useState<string>("Zuek");
   const [denbora, setDenbora] = useState<string>("Orainaldia");
-  const [forma, setForma] = useState<string>("Nor");
+  const [forma, setForma] = useState<string>("nor_nori_nork");
 
-  const [aditzLaguntzailea, setAditzLaguntzailea] = useState<string>("");
+  const [state, setState] = useState<any>({ nor: 'Haiek', nori: 'Guri', nork: 'Zuek', denbora: 'Orainaldia', forma: 'nor_nori_nork' });
 
   const changeForm = (value: string) => {
     setForma(value);
@@ -28,41 +44,43 @@ const NorNoriNork: React.FC = () => {
   useEffect(() => {
     console.log(`try to find ${nor} ${nori} ${nork} ${denbora} ${forma}`)
     var item: any;
-    if (forma === "nor"){
-          // item = aditzLaguntzaileak.nor.find( // todo add nor aditz laguntzaileak
-          //   (item: any) => {
-          //     item.nor === nor &&
-          //       item.denbora === denbora
-          //   }
-          // )?.aditz_lagunzailea;
-    }else if (forma === "nor_nori"){
+    if (forma === "nor") {
+      item = aditzLaguntzaileak.nor.find( // todo add nor aditz laguntzaileak
+        (item: any) =>
+          item.nor === nor &&
+          item.denbora === denbora
+
+      );
+    } else if (forma === "nor_nori") {
       item = aditzLaguntzaileak.nor_nori.find(
-        (item: any) => 
+        (item: any) =>
           item.nor === nor &&
           item.nori === nori &&
           item.denbora === denbora
-        
-      )?.aditz_lagunzailea;
-    }else if (forma === "nor_nork"){
+
+      )
+    } else if (forma === "nor_nork") {
       item = aditzLaguntzaileak.nor_nork.find(
-        (item: any) => 
+        (item: any) =>
           item.nor === nor &&
           item.nork === nork &&
-            item.denbora === denbora
-        
-      )?.aditz_lagunzailea;
-    }else if (forma === "nor_nori_nork"){
+          item.denbora === denbora
+
+      );
+    } else if (forma === "nor_nori_nork") {
       item = aditzLaguntzaileak.nor_nori_nork.find(
-        (item: any) => 
+        (item: any) =>
           item.nor === nor &&
           item.nork === nork &&
           item.nori === nori &&
           item.denbora === denbora
-        
-      )?.aditz_lagunzailea;
+
+      );
     }
     console.log(item)
-    setAditzLaguntzailea(item || null);
+    if (item !== undefined) {
+      setState({ ...item, forma })
+    }
   }, [nor, nori, nork, denbora]);
 
   const norList: string[] = ['Ni', 'Zu', 'Hura', 'Gu', 'Zuek', 'Haiek'];
@@ -128,7 +146,7 @@ const NorNoriNork: React.FC = () => {
       <div style={styles.container}>
         <div>
           <label style={styles.label}>Forma: </label>
-          <select value={forma} onChange={(e) => changeForm(e.target.value)} style={styles.select}>
+          <select value={state.forma} onChange={(e) => changeForm(e.target.value)} style={styles.select}>
             <option value="" disabled style={styles.placeholder}>Forma</option>
             {formaList.map((item, index) => (
               <option key={index} value={item}>{item}</option>
@@ -138,7 +156,7 @@ const NorNoriNork: React.FC = () => {
 
         <div>
           <label style={styles.label}>Denbora: </label>
-          <select value={denbora} onChange={(e) => setDenbora(e.target.value)} style={styles.select}>
+          <select value={state.denbora} onChange={(e) => setDenbora(e.target.value)} style={styles.select}>
             <option value="" disabled style={styles.placeholder}>Denbora</option>
             {denboraList.map((item, index) => (
               <option key={index} value={item}>{item}</option>
@@ -148,7 +166,7 @@ const NorNoriNork: React.FC = () => {
 
         <div>
           <label style={styles.label}>Nor: </label>
-          <select value={nor} onChange={(e) => setNor(e.target.value)} style={styles.select}>
+          <select value={state.nor} onChange={(e) => setNor(e.target.value)} style={styles.select}>
             <option value="" disabled style={styles.placeholder}>Nor</option>
             {norList.map((item, index) => (
               <option key={index} value={item}>{item}</option>
@@ -159,7 +177,7 @@ const NorNoriNork: React.FC = () => {
           ['nor_nori', 'nor_nori_nork'].includes(forma) ?
             <div>
               <label style={styles.label}>Nori: </label>
-              <select value={nori} onChange={(e) => setNori(e.target.value)} style={styles.select}>
+              <select value={state.nori} onChange={(e) => setNori(e.target.value)} style={styles.select}>
                 <option value="" disabled style={styles.placeholder}>Nori</option>
                 {noriList.map((item, index) => (
                   <option key={index} value={item}>{item}</option>
@@ -171,7 +189,7 @@ const NorNoriNork: React.FC = () => {
           ['nor_nork', 'nor_nori_nork'].includes(forma) ?
             <div>
               <label style={styles.label}>Nork: </label>
-              <select value={nork} onChange={(e) => setNork(e.target.value)} style={styles.select}>
+              <select value={state.nork} onChange={(e) => setNork(e.target.value)} style={styles.select}>
                 <option value="" disabled style={styles.placeholder}>Nork</option>
                 {norkList.map((item, index) => (
                   <option key={index} value={item}>{item}</option>
@@ -182,11 +200,7 @@ const NorNoriNork: React.FC = () => {
 
         <div style={styles.details}>
           <h3>Aditz laguntzailea :</h3>
-          {aditzLaguntzailea ?
-            <p style={styles.placeholder}>{aditzLaguntzailea}</p>
-            :
-            <p>Ez da</p>
-          }
+          <p style={styles.placeholder}>{state.aditz_lagunzailea}</p>
         </div>
       </div>
     </div>
