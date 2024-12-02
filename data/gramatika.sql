@@ -108,6 +108,41 @@ Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Z
 Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Zuek', 'Dituzue', 'Orainaldia');
 Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Haiek', 'Dituzte', 'Orainaldia');
 
+
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Ni', 'Hark', 'Ninduen', 'Lehenaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Ni', 'Zuk', 'Ninduzun', 'Lehenaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Ni', 'Zuek', 'Ninduzuen', 'Lehenaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Ni', 'Haiek', 'Ninduten', 'Lehenaldia');
+
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Nik', 'Nuen', 'Lehenaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Hark', 'Zuen', 'Lehenaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Guk', 'genuen', 'Lehenaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuk', 'Zenuen', 'Lehenaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuek', 'Zenuten', 'Lehenaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Haiek', 'Zuten', 'Lehenaldia');
+
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Gu', 'Hark', 'Gintuen', 'Lehenaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Gu', 'Zuk', 'Gintuzun', 'Lehenaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Gu', 'Zuek', 'Gintuzuen', 'Lehenaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Gu', 'Haiek', 'Gintuzten', 'Lehenaldia');
+
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Zu', 'Nik', 'Zintudan', 'Lehenaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Zu', 'Hark', 'Zintuen', 'Lehenaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Zu', 'Guk', 'Zintugun', 'Lehenaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Zu', 'Haiek', 'Zintuzten', 'Lehenaldia');
+
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Zuek', 'Nik', 'Zintuztedan', 'Lehenaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Zuek', 'Hark', 'Zintuzten', 'Lehenaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Zuek', 'Guk', 'Zintuztegun', 'Lehenaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Zuek', 'Haiek', 'Zintuzteten', 'Lehenaldia');
+
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Nik', 'Nituen', 'Lehenaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Hark', 'Zituen', 'Lehenaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Guk', 'Genituen', 'Lehenaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Zuk', 'Zenituen', 'Lehenaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Zuek', 'Zenituzten', 'Lehenaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Haiek', 'Zituzten', 'Lehenaldia');
+
 Create table nor_nori (
     nor TEXT,
     nori TEXT,
