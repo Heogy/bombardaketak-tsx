@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import aditzLaguntzaileak from './aditz_lagunak.json';
 import { log } from "console";
+import SearchableInput from "./SearchableInput";
 
 interface struc {
   nor: string,
@@ -83,8 +84,8 @@ const NorNoriNork: React.FC = () => {
 
   useEffect(() => {
     console.log('ping pong ?');
-    
-    const item = all.find(a => a.aditz_lagunzailea === al);
+
+    const item = all.find(a => a.aditz_lagunzailea.toLowerCase() === al.toLowerCase());
     if (item !== undefined) {
       setForma(item.forma);
       setDenbora(item.denbora);
@@ -157,6 +158,10 @@ const NorNoriNork: React.FC = () => {
   return (
     <div style={styles.outerContainer}>
       <div style={styles.container}>
+        <div style={styles.details}>
+          <label >Aditz laguntzailea: </label>
+          <SearchableInput options={all.map(a => a.aditz_lagunzailea).sort((a:string, b:string)=> a.localeCompare(b))} placeholder="aditz laguntzailea" setAL={setAL} al={al}/>
+        </div>
         <div>
           <label style={styles.label}>Forma: </label>
           <select value={forma} onChange={(e) => setForma(e.target.value)} style={styles.select}>
@@ -211,10 +216,7 @@ const NorNoriNork: React.FC = () => {
             </div>
             : null}
 
-        <div style={styles.details}>
-          <h3>Aditz laguntzailea :</h3>
-          <p style={styles.placeholder}>{al}</p>
-        </div>
+        
       </div>
     </div>
   );
