@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import aditzLaguntzaileak from './aditz_lagunak.json';
+import { log } from "console";
 
 interface struc {
   nor: string,
@@ -26,31 +27,25 @@ const NorNoriNork: React.FC = () => {
   const [nork, setNork] = useState<string>("Zuek");
   const [denbora, setDenbora] = useState<string>("Orainaldia");
   const [forma, setForma] = useState<string>("nor_nori_nork");
-
-  const [state, setState] = useState<any>({ nor: 'Haiek', nori: 'Guri', nork: 'Zuek', denbora: 'Orainaldia', forma: 'nor_nori_nork' });
-
-  const changeForm = (value: string) => {
-    setForma(value);
-    setNor("")
-    setNori("")
-    setNork("");
-    console.log("nor " + nor)
-    console.log("nori " + nori)
-    console.log("nork " + nork)
-    console.log("forma " + forma)
-    console.log("denbora " + denbora)
-  }
+  const [al, setAL] = useState<string>("");
 
   useEffect(() => {
+    searchAL();
+
+
+  }, [forma, denbora, nor, nori, nork])
+
+
+  const searchAL = () => {
     console.log(`try to find ${nor} ${nori} ${nork} ${denbora} ${forma}`)
-    var item: any;
+    var item: string | undefined;
     if (forma === "nor") {
-      item = aditzLaguntzaileak.nor.find( // todo add nor aditz laguntzaileak
+      item = aditzLaguntzaileak.nor.find(
         (item: any) =>
           item.nor === nor &&
           item.denbora === denbora
 
-      );
+      )?.aditz_lagunzailea;
     } else if (forma === "nor_nori") {
       item = aditzLaguntzaileak.nor_nori.find(
         (item: any) =>
@@ -58,7 +53,7 @@ const NorNoriNork: React.FC = () => {
           item.nori === nori &&
           item.denbora === denbora
 
-      )
+      )?.aditz_lagunzailea;
     } else if (forma === "nor_nork") {
       item = aditzLaguntzaileak.nor_nork.find(
         (item: any) =>
@@ -66,7 +61,7 @@ const NorNoriNork: React.FC = () => {
           item.nork === nork &&
           item.denbora === denbora
 
-      );
+      )?.aditz_lagunzailea;
     } else if (forma === "nor_nori_nork") {
       item = aditzLaguntzaileak.nor_nori_nork.find(
         (item: any) =>
@@ -75,13 +70,31 @@ const NorNoriNork: React.FC = () => {
           item.nori === nori &&
           item.denbora === denbora
 
-      );
+      )?.aditz_lagunzailea;
     }
     console.log(item)
     if (item !== undefined) {
-      setState({ ...item, forma })
+      setAL(item)
+    } else {
+      setAL("EZ DA !!!")
     }
-  }, [nor, nori, nork, denbora]);
+  };
+
+
+  useEffect(() => {
+    console.log('ping pong ?');
+    
+    const item = all.find(a => a.aditz_lagunzailea === al);
+    if (item !== undefined) {
+      setForma(item.forma);
+      setDenbora(item.denbora);
+      setNor(item.nor);
+      if (item.nori !== undefined)
+        setNori(item.nori);
+      if (item.nork !== undefined)
+        setNork(item.nork);
+    }
+  }, [al])
 
   const norList: string[] = ['Ni', 'Zu', 'Hura', 'Gu', 'Zuek', 'Haiek'];
   const noriList: string[] = ['Niri', 'Zuri', 'Hari', 'Guri', 'Zuei', 'Haiei', ''];
@@ -146,7 +159,7 @@ const NorNoriNork: React.FC = () => {
       <div style={styles.container}>
         <div>
           <label style={styles.label}>Forma: </label>
-          <select value={state.forma} onChange={(e) => changeForm(e.target.value)} style={styles.select}>
+          <select value={forma} onChange={(e) => setForma(e.target.value)} style={styles.select}>
             <option value="" disabled style={styles.placeholder}>Forma</option>
             {formaList.map((item, index) => (
               <option key={index} value={item}>{item}</option>
@@ -156,7 +169,7 @@ const NorNoriNork: React.FC = () => {
 
         <div>
           <label style={styles.label}>Denbora: </label>
-          <select value={state.denbora} onChange={(e) => setDenbora(e.target.value)} style={styles.select}>
+          <select value={denbora} onChange={(e) => setDenbora(e.target.value)} style={styles.select}>
             <option value="" disabled style={styles.placeholder}>Denbora</option>
             {denboraList.map((item, index) => (
               <option key={index} value={item}>{item}</option>
@@ -166,7 +179,7 @@ const NorNoriNork: React.FC = () => {
 
         <div>
           <label style={styles.label}>Nor: </label>
-          <select value={state.nor} onChange={(e) => setNor(e.target.value)} style={styles.select}>
+          <select value={nor} onChange={(e) => setNor(e.target.value)} style={styles.select}>
             <option value="" disabled style={styles.placeholder}>Nor</option>
             {norList.map((item, index) => (
               <option key={index} value={item}>{item}</option>
@@ -177,7 +190,7 @@ const NorNoriNork: React.FC = () => {
           ['nor_nori', 'nor_nori_nork'].includes(forma) ?
             <div>
               <label style={styles.label}>Nori: </label>
-              <select value={state.nori} onChange={(e) => setNori(e.target.value)} style={styles.select}>
+              <select value={nori} onChange={(e) => setNori(e.target.value)} style={styles.select}>
                 <option value="" disabled style={styles.placeholder}>Nori</option>
                 {noriList.map((item, index) => (
                   <option key={index} value={item}>{item}</option>
@@ -189,7 +202,7 @@ const NorNoriNork: React.FC = () => {
           ['nor_nork', 'nor_nori_nork'].includes(forma) ?
             <div>
               <label style={styles.label}>Nork: </label>
-              <select value={state.nork} onChange={(e) => setNork(e.target.value)} style={styles.select}>
+              <select value={nork} onChange={(e) => setNork(e.target.value)} style={styles.select}>
                 <option value="" disabled style={styles.placeholder}>Nork</option>
                 {norkList.map((item, index) => (
                   <option key={index} value={item}>{item}</option>
@@ -200,7 +213,7 @@ const NorNoriNork: React.FC = () => {
 
         <div style={styles.details}>
           <h3>Aditz laguntzailea :</h3>
-          <p style={styles.placeholder}>{state.aditz_lagunzailea}</p>
+          <p style={styles.placeholder}>{al}</p>
         </div>
       </div>
     </div>
