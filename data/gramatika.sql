@@ -116,7 +116,7 @@ Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Ni', 'Haie
 
 Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Nik', 'Nuen', 'Lehenaldia');
 Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Hark', 'Zuen', 'Lehenaldia');
-Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Guk', 'genuen', 'Lehenaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Guk', 'Genuen', 'Lehenaldia');
 Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuk', 'Zenuen', 'Lehenaldia');
 Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuek', 'Zenuten', 'Lehenaldia');
 Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Haiek', 'Zuten', 'Lehenaldia');
