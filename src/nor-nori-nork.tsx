@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import aditzLaguntzaileak from './aditz_lagunak.json';
-import { log } from "console";
 import SearchableInput from "./SearchableInput";
 
 interface struc {
