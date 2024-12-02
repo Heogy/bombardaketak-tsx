@@ -56,6 +56,13 @@ Insert into nor (nor, aditz_lagunzailea, denbora) values ('Gu', 'Gara', 'Orainal
 Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zuek', 'Zarete', 'Orainaldia');
 Insert into nor (nor, aditz_lagunzailea, denbora) values ('Haiek', 'Dira', 'Orainaldia');
 
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Ni', 'Nintzen', 'Lehenaldia');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zu', 'Zinen', 'Lehenaldia');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Hura', 'Zen', 'Lehenaldia');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Gu', 'Ginen', 'Lehenaldia');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zuek', 'Zineten', 'Lehenaldia');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Haiek', 'Ziren', 'Lehenaldia');
+
 Create table nor_nork (
     nor TEXT,
     nork TEXT,
