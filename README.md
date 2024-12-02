@@ -1,3 +1,3 @@
 ## Purpose
-Aditz languntzaile guziak.
+Aditz languntzaile guziak..
 ## How To Use
