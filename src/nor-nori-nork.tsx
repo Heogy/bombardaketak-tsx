@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import aditzLaguntzaileak from './aditz_lagunak.json';
 import SearchableInput from "./SearchableInput";
+import './style.css';
+
 
 interface struc {
   nor: string,
@@ -155,13 +157,13 @@ const NorNoriNork: React.FC = () => {
   };
 
   return (
-    <div style={styles.outerContainer}>
-      <div style={styles.container}>
-        <div style={styles.details}>
+    <div style={styles.outerContainer} >
+      <div style={styles.container} id="container">
+        <div style={styles.details} id="al">
           <label >Aditz laguntzailea: </label>
           <SearchableInput options={all.map(a => a.aditz_lagunzailea).sort((a:string, b:string)=> a.localeCompare(b))} placeholder="aditz laguntzailea" setAL={setAL} al={al}/>
         </div>
-        <div>
+        <div id="forma">
           <label style={styles.label}>Forma: </label>
           <select value={forma} onChange={(e) => setForma(e.target.value)} style={styles.select}>
             <option value="" disabled style={styles.placeholder}>Forma</option>
@@ -171,7 +173,7 @@ const NorNoriNork: React.FC = () => {
           </select>
         </div>
 
-        <div>
+        <div id="denbora">
           <label style={styles.label}>Denbora: </label>
           <select value={denbora} onChange={(e) => setDenbora(e.target.value)} style={styles.select}>
             <option value="" disabled style={styles.placeholder}>Denbora</option>
@@ -181,7 +183,7 @@ const NorNoriNork: React.FC = () => {
           </select>
         </div>
 
-        <div>
+        <div id="nor">
           <label style={styles.label}>Nor: </label>
           <select value={nor} onChange={(e) => setNor(e.target.value)} style={styles.select}>
             <option value="" disabled style={styles.placeholder}>Nor</option>
@@ -192,7 +194,7 @@ const NorNoriNork: React.FC = () => {
         </div>
         {
           ['nor_nori', 'nor_nori_nork'].includes(forma) ?
-            <div>
+            <div id="nori">
               <label style={styles.label}>Nori: </label>
               <select value={nori} onChange={(e) => setNori(e.target.value)} style={styles.select}>
                 <option value="" disabled style={styles.placeholder}>Nori</option>
@@ -204,7 +206,7 @@ const NorNoriNork: React.FC = () => {
             : null}
         {
           ['nor_nork', 'nor_nori_nork'].includes(forma) ?
-            <div>
+            <div id="nork">
               <label style={styles.label}>Nork: </label>
               <select value={nork} onChange={(e) => setNork(e.target.value)} style={styles.select}>
                 <option value="" disabled style={styles.placeholder}>Nork</option>
