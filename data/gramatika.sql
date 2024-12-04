@@ -42,7 +42,8 @@ Insert into denbora (denbora) values ('Iragana');
 Insert into denbora (denbora) values ('Orian ahalera');
 Insert into denbora (denbora) values ('Iragan ahalera');
 Insert into denbora (denbora) values ('Alegiazko ahalera');
-
+Insert into denbora (denbora) values ('Orain subjuntiboa');
+Insert into denbora (denbora) values ('Iragan subjuntiboa');
 
 create table nor (
     nor TEXT,
@@ -53,6 +54,7 @@ create table nor (
     FOREIGN KEY (denbora) REFERENCES denbora(denbora)
 );
 
+-- Indikatiboa
 Insert into nor (nor, aditz_lagunzailea, denbora) values ('Ni', 'Naiz', 'Oraina');
 Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zu', 'Zara', 'Oraina');
 Insert into nor (nor, aditz_lagunzailea, denbora) values ('Hura', 'Da', 'Oraina');
@@ -67,6 +69,7 @@ Insert into nor (nor, aditz_lagunzailea, denbora) values ('Gu', 'Ginen', 'Iragan
 Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zuek', 'Zineten', 'Iragana');
 Insert into nor (nor, aditz_lagunzailea, denbora) values ('Haiek', 'Ziren', 'Iragana');
 
+-- Ahalera
 Insert into nor (nor, aditz_lagunzailea, denbora) values ('Ni', 'Naiteke', 'Orian ahalera');
 Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zu', 'Zaitezke', 'Orian ahalera');
 Insert into nor (nor, aditz_lagunzailea, denbora) values ('Hura', 'Daiteke', 'Orian ahalera');
@@ -88,6 +91,21 @@ Insert into nor (nor, aditz_lagunzailea, denbora) values ('Gu', 'Gintezke', 'Ale
 Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zuek', 'Zintezke', 'Alegiazko ahalera');
 Insert into nor (nor, aditz_lagunzailea, denbora) values ('Haiek', 'Litezke', 'Alegiazko ahalera');
 
+-- Subjuntiboa
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Ni', 'Nadin', 'Orian subjuntiboa');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zu', 'Zaitezen', 'Orian subjuntiboa');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Hura', 'Dadin', 'Orian subjuntiboa');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Gu', 'Gaitezen', 'Orian subjuntiboa');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zuek', 'Zaitezen', 'Orian subjuntiboa');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Haiek', 'Daitezen', 'Orian subjuntiboa');
+
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Ni', 'Nendin', 'Iragan subjuntiboa');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zu', 'Zintezen', 'Iragan subjuntiboa');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Hura', 'Zedin', 'Iragan subjuntiboa');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Gu', 'Gintezen', 'Iragan subjuntiboa');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zuek', 'Zintezten', 'Iragan subjuntiboa');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Haiek', 'Zitezen', 'Iragan subjuntiboa');
+
 Create table nor_nork (
     nor TEXT,
     nork TEXT,
@@ -99,6 +117,7 @@ Create table nor_nork (
     FOREIGN KEY (denbora) REFERENCES denbora(denbora)
 );
 
+-- Indikatiboa
 Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Ni', 'Hark', 'Nau', 'Oraina');
 Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Ni', 'Zuk', 'Nauzu', 'Oraina');
 Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Ni', 'Zuek', 'Nauzue', 'Oraina');
@@ -210,6 +229,21 @@ Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'H
 Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Guk', 'Genitzake', 'Alegiazko ahalera');
 Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Zuek', 'Zenitzakete', 'Alegiazko ahalera');
 Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Haiek', 'Litzakete', 'Alegiazko ahalera');
+
+-- Nor Nork Subjuntiboa
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Nik', 'Dezadan', 'Orian subjuntiboa');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuk', 'Dezazun', 'Orian subjuntiboa');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Hark', 'Dezan', 'Orian subjuntiboa');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Guk', 'Dezagun', 'Orian subjuntiboa');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuek', 'Dezazuen', 'Orian subjuntiboa');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Haiek', 'Dezaten', 'Orian subjuntiboa');
+
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Nik', 'Ditzadan', 'Orian subjuntiboa');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Zuk', 'Ditzazun', 'Orian subjuntiboa');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Hark', 'Ditzan', 'Orian subjuntiboa');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Guk', 'Ditzagun', 'Orian subjuntiboa');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Zuek', 'Ditzazuen', 'Orian subjuntiboa');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Haiek', 'Ditzaten', 'Orian subjuntiboa');
 
 Create table nor_nori (
     nor TEXT,
