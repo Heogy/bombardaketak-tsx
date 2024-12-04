@@ -39,6 +39,10 @@ CREATE TABLE denbora (
 
 Insert into denbora (denbora) values ('Oraina');
 Insert into denbora (denbora) values ('Iragana');
+Insert into denbora (denbora) values ('Orian ahalera');
+Insert into denbora (denbora) values ('Iragan ahalera');
+Insert into denbora (denbora) values ('Alegiazko ahalera');
+
 
 create table nor (
     nor TEXT,
@@ -62,6 +66,27 @@ Insert into nor (nor, aditz_lagunzailea, denbora) values ('Hura', 'Zen', 'Iragan
 Insert into nor (nor, aditz_lagunzailea, denbora) values ('Gu', 'Ginen', 'Iragana');
 Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zuek', 'Zineten', 'Iragana');
 Insert into nor (nor, aditz_lagunzailea, denbora) values ('Haiek', 'Ziren', 'Iragana');
+
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Ni', 'Naiteke', 'Orian ahalera');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zu', 'Zaitezke', 'Orian ahalera');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Hura', 'Daiteke', 'Orian ahalera');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Gu', 'Gaitezke', 'Orian ahalera');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zuek', 'Zaitezkete', 'Orian ahalera');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Haiek', 'Daitezke', 'Orian ahalera');
+
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Ni', 'Nintekeen', 'Iragan ahalera');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zu', 'Zintezkeen', 'Iragan ahalera');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Hura', 'Zitekeen', 'Iragan ahalera');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Gu', 'Gintezkeen', 'Iragan ahalera');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zuek', 'Zintezketen', 'Iragan ahalera');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Haiek', 'Zitezkeen', 'Iragan ahalera');
+
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Ni', 'Ninteke', 'Alegiazko ahalera');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zu', 'Zintezke', 'Alegiazko ahalera');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Hura', 'Liteke', 'Alegiazko ahalera');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Gu', 'Gintezke', 'Alegiazko ahalera');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zuek', 'Zintezke', 'Alegiazko ahalera');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Haiek', 'Litezke', 'Alegiazko ahalera');
 
 Create table nor_nork (
     nor TEXT,

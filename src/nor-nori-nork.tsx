@@ -101,7 +101,7 @@ const NorNoriNork: React.FC = () => {
   const norList: string[] = ['Ni', 'Zu', 'Hura', 'Gu', 'Zuek', 'Haiek'];
   const noriList: string[] = ['Niri', 'Zuri', 'Hari', 'Guri', 'Zuei', 'Haiei', ''];
   const norkList: string[] = ['Nik', 'Zuk', 'Hark', 'Guk', 'Zuek', 'Haiek', ''];
-  const denboraList: string[] = ['Oraina', 'Iragana'];
+  const denboraList: string[] = aditzLaguntzaileak.denbora.map(a=>a.denbora);
   const formaList: string[] = ['nor', 'nor_nori', 'nor_nork', 'nor_nori_nork'];
 
 
