@@ -271,10 +271,10 @@ Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values (
 Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zueri', 'Nik', 'Nizuen', 'Iragana');
 Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Haiei', 'Nik', 'Nien', 'Iragana');
 
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Hari', 'Nik', 'Nizkion', 'Iragana');
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuri', 'Nik', 'Nizkizun', 'Iragana');
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zueri', 'Nik', 'Nizkizuen', 'Iragana');
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Haiei', 'Nik', 'Nizkien', 'Iragana');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Hari', 'Nik', 'Nizkion', 'Iragana');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Zuri', 'Nik', 'Nizkizun', 'Iragana');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Zueri', 'Nik', 'Nizkizuen', 'Iragana');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Haiei', 'Nik', 'Nizkien', 'Iragana');
 
 Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Niri', 'Hark', 'Zidan', 'Iragana');
 Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Hari', 'Hark', 'Zion', 'Iragana');
@@ -283,32 +283,32 @@ Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values (
 Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuei', 'Hark', 'Zizuen', 'Iragana');
 Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Haiei', 'Hark', 'Zien', 'Iragana');
 
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Niri', 'Hark', 'Zizkidan', 'Iragana');
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Hari', 'Hark', 'Zizkion', 'Iragana');
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Guri', 'Hark', 'Zizkigun', 'Iragana');
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuri', 'Hark', 'Zizkizun', 'Iragana');
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuei', 'Hark', 'Zizkizuen', 'Iragana');
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Haiei', 'Hark', 'Zizkien', 'Iragana');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Niri', 'Hark', 'Zizkidan', 'Iragana');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Hari', 'Hark', 'Zizkion', 'Iragana');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Guri', 'Hark', 'Zizkigun', 'Iragana');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Zuri', 'Hark', 'Zizkizun', 'Iragana');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Zuei', 'Hark', 'Zizkizuen', 'Iragana');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Haiei', 'Hark', 'Zizkien', 'Iragana');
 
 Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Hari', 'Guk', 'Genion', 'Iragana');
 Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuri', 'Guk', 'Genizun', 'Iragana');
 Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuei', 'Guk', 'Genizuen', 'Iragana');
 Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Haiei', 'Guk', 'Genien', 'Iragana');
 
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Hari', 'Guk', 'Genizkion', 'Iragana');
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuri', 'Guk', 'Genizkizun', 'Iragana');
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuei', 'Guk', 'Genizkizuen', 'Iragana');
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Haiei', 'Guk', 'Genizkien', 'Iragana');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Hari', 'Guk', 'Genizkion', 'Iragana');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Zuri', 'Guk', 'Genizkizun', 'Iragana');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Zuei', 'Guk', 'Genizkizuen', 'Iragana');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Haiei', 'Guk', 'Genizkien', 'Iragana');
 
 Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Niri', 'Zuk', 'Zenidan', 'Iragana');
 Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Hari', 'Zuk', 'Zenion', 'Iragana');
 Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Guri', 'Zuk', 'Zenidun', 'Iragana');
 Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Haiei', 'Zuk', 'Zenien', 'Iragana');
 
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Niri', 'Zuk', 'Zenizkidan', 'Iragana');
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Hari', 'Zuk', 'Zenizkion', 'Iragana');
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Guri', 'Zuk', 'Zenizkidun', 'Iragana');
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Haiei', 'Zuk', 'Zenizkien', 'Iragana');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Niri', 'Zuk', 'Zenizkidan', 'Iragana');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Hari', 'Zuk', 'Zenizkion', 'Iragana');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Guri', 'Zuk', 'Zenizkidun', 'Iragana');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Haiei', 'Zuk', 'Zenizkien', 'Iragana');
 
 Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Niri', 'Zuek', 'Zenidaten', 'Iragana');
 Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Hari', 'Zuek', 'Zenioten', 'Iragana');
@@ -327,12 +327,12 @@ Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values (
 Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuei', 'Haiek', 'Zizueten', 'Iragana');
 Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Haiei', 'Haiek', 'Zieten', 'Iragana');
 
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Niri', 'Haiek', 'Zizkidaten', 'Iragana');
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Hari', 'Haiek', 'Zizkioten', 'Iragana');
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Guri', 'Haiek', 'Zizkiguten', 'Iragana');
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuri', 'Haiek', 'Zizkizuten', 'Iragana');
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuei', 'Haiek', 'Zizkizueten', 'Iragana');
-Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Hura', 'Haiei', 'Haiek', 'Zizkieten', 'Iragana');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Niri', 'Haiek', 'Zizkidaten', 'Iragana');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Hari', 'Haiek', 'Zizkioten', 'Iragana');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Guri', 'Haiek', 'Zizkiguten', 'Iragana');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Zuri', 'Haiek', 'Zizkizuten', 'Iragana');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Zuei', 'Haiek', 'Zizkizueten', 'Iragana');
+Insert into nor_nori_nork (nor, nori, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Haiei', 'Haiek', 'Zizkieten', 'Iragana');
 
 
 Create view aditz_lagunak(forme, nor, nori, nork, aditz_laguntzilea, denbora) as 
