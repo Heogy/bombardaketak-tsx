@@ -27,7 +27,7 @@ const NorNoriNork: React.FC = () => {
   const [nor, setNor] = useState<string>("Haiek");
   const [nori, setNori] = useState<string>("Guri");
   const [nork, setNork] = useState<string>("Zuek");
-  const [denbora, setDenbora] = useState<string>("Orainaldia");
+  const [denbora, setDenbora] = useState<string>("Oraina");
   const [forma, setForma] = useState<string>("nor_nori_nork");
   const [al, setAL] = useState<string>("");
 
@@ -101,7 +101,7 @@ const NorNoriNork: React.FC = () => {
   const norList: string[] = ['Ni', 'Zu', 'Hura', 'Gu', 'Zuek', 'Haiek'];
   const noriList: string[] = ['Niri', 'Zuri', 'Hari', 'Guri', 'Zuei', 'Haiei', ''];
   const norkList: string[] = ['Nik', 'Zuk', 'Hark', 'Guk', 'Zuek', 'Haiek', ''];
-  const denboraList: string[] = ['Orainaldia', 'Lehenaldia'];
+  const denboraList: string[] = ['Oraina', 'Iragana'];
   const formaList: string[] = ['nor', 'nor_nori', 'nor_nork', 'nor_nori_nork'];
 
 
