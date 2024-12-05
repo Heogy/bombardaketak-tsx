@@ -32,14 +32,6 @@ const NorNoriNork: React.FC = () => {
   const [al, setAL] = useState<string>("");
 
   useEffect(() => {
-    searchAL();
-
-
-  }, [forma, denbora, nor, nori, nork])
-
-
-  const searchAL = () => {
-    console.log(`try to find ${nor} ${nori} ${nork} ${denbora} ${forma}`)
     var item: string | undefined;
     if (forma === "nor") {
       item = aditzLaguntzaileak.nor.find(
@@ -74,18 +66,14 @@ const NorNoriNork: React.FC = () => {
 
       )?.aditz_lagunzailea;
     }
-    console.log(item)
     if (item !== undefined) {
       setAL(item)
     } else {
       setAL("EZ DA !!!")
     }
-  };
-
+  }, [forma, denbora, nor, nori, nork])
 
   useEffect(() => {
-    console.log('ping pong ?');
-
     const item = all.find(a => a.aditz_lagunzailea.toLowerCase() === al.toLowerCase());
     if (item !== undefined) {
       setForma(item.forma);
