@@ -104,8 +104,8 @@ function levenshtein(s: string, t: string) : number{
 }
 function sortByLevenshtein(searchTerm: string, array: string[]) {
   return array.sort((a: string, b: string) => {
-      const distanceA = levenshtein(searchTerm, a);
-      const distanceB = levenshtein(searchTerm, b);
+      const distanceA = levenshtein(searchTerm.toLocaleLowerCase(), a.toLocaleLowerCase());
+      const distanceB = levenshtein(searchTerm.toLocaleLowerCase(), b.toLocaleLowerCase());
       return distanceA - distanceB; // Ascending order
   });
 }
