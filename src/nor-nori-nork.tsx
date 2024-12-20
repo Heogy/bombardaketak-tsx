@@ -153,8 +153,9 @@ const NorNoriNork: React.FC = () => {
           />
         </div>
         <div id="forma">
-          <label style={styles.label}>Forma: </label>
+          <label htmlFor="forma" style={styles.label}>Forma: </label>
           <select
+            name="forma"
             value={forma}
             onChange={(e) => setForma(e.target.value)}
             style={styles.select}
@@ -171,8 +172,9 @@ const NorNoriNork: React.FC = () => {
         </div>
 
         <div id="denbora">
-          <label style={styles.label}>Denbora: </label>
+          <label htmlFor="denbora" style={styles.label}>Denbora: </label>
           <select
+            name="denbora"
             value={denbora}
             onChange={(e) => setDenbora(e.target.value)}
             style={styles.select}
@@ -189,8 +191,8 @@ const NorNoriNork: React.FC = () => {
         </div>
 
         <div id="nor">
-          <label style={styles.label}>Nor: </label>
-          <select
+          <label htmlFor="nor" style={styles.label}>Nor: </label>
+          <select name="nor"
             value={nor}
             onChange={(e) => setNor(e.target.value)}
             style={styles.select}
@@ -207,8 +209,9 @@ const NorNoriNork: React.FC = () => {
         </div>
         {["nor_nori", "nor_nori_nork"].includes(forma) ? (
           <div id="nori">
-            <label style={styles.label}>Nori: </label>
+            <label htmlFor="nori"  style={styles.label}>Nori: </label>
             <select
+              name="nori"
               value={nori}
               onChange={(e) => setNori(e.target.value)}
               style={styles.select}
@@ -226,8 +229,9 @@ const NorNoriNork: React.FC = () => {
         ) : null}
         {["nor_nork", "nor_nori_nork"].includes(forma) ? (
           <div id="nork">
-            <label style={styles.label}>Nork: </label>
+            <label htmlFor="nork"  style={styles.label}>Nork: </label>
             <select
+              name="nork"
               value={nork}
               onChange={(e) => setNork(e.target.value)}
               style={styles.select}
