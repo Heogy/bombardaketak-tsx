@@ -1,73 +1,66 @@
 #container {
-    align-items: center;
-    justify-items: center;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 10px;
-    width: 90%;
-    max-width: 1200px;
-    grid-auto-rows: auto;
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  width: 90%;
+  max-width: 1200px;
+  grid-auto-rows: auto;
 }
 
 #al {
-    grid-column: 1 / -1;
-    width: 90%;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  grid-column: 1 / -1;
+  width: 90%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 #forma {
-    grid-column: 1/4;
-    width: 90%
-
+  grid-column: 1/4;
+  width: 90%;
 }
 
 #denbora {
-    grid-column: 4/7;
-    width: 90%
-
+  grid-column: 4/7;
+  width: 90%;
 }
 
 #nor {
-    grid-column: 1/3;
-    width: 90%
-
+  grid-column: 1/3;
+  width: 90%;
 }
 
 #nori {
-    grid-column: 3/5;
-    width: 90%
-
+  grid-column: 3/5;
+  width: 90%;
 }
 
 #nork {
-    grid-column: 5/7;
-    width: 90%
-
+  grid-column: 5/7;
+  width: 90%;
 }
 
-@media (max-width:480px) {
-    #forma {
-        grid-column: 1 / -1;
+@media (max-width: 480px) {
+  #forma {
+    grid-column: 1 / -1;
+  }
 
-    }
+  #denbora {
+    grid-column: 1 / -1;
+  }
 
-    #denbora {
+  #nor {
+    grid-column: 1 / -1;
+  }
 
-        grid-column: 1 / -1;
-    }
+  #nori {
+    grid-column: 1 / -1;
+  }
 
-    #nor {
-        grid-column: 1 / -1;
-    }
-
-    #nori {
-        grid-column: 1 / -1;
-    }
-
-    #nork {
-        grid-column: 1 / -1;
-    }
+  #nork {
+    grid-column: 1 / -1;
+  }
 }

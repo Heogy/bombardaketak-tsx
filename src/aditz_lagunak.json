@@ -294,152 +294,6 @@
             "aditz_lagunzailea": "Zitezen"
         }
     ],
-    "nor_nori": [
-        {
-            "nor": "Hura",
-            "nori": "Niri",
-            "denbora": "Oraina",
-            "aditz_lagunzailea": "Zait"
-        },
-        {
-            "nor": "Hura",
-            "nori": "Hari",
-            "denbora": "Oraina",
-            "aditz_lagunzailea": "Zaio"
-        },
-        {
-            "nor": "Hura",
-            "nori": "Guri",
-            "denbora": "Oraina",
-            "aditz_lagunzailea": "Zaigu"
-        },
-        {
-            "nor": "Hura",
-            "nori": "Zuri",
-            "denbora": "Oraina",
-            "aditz_lagunzailea": "Zaizu"
-        },
-        {
-            "nor": "Hura",
-            "nori": "Zuei",
-            "denbora": "Oraina",
-            "aditz_lagunzailea": "Zaizue"
-        },
-        {
-            "nor": "Hura",
-            "nori": "Haiei",
-            "denbora": "Oraina",
-            "aditz_lagunzailea": "Zaie"
-        },
-        {
-            "nor": "Haiek",
-            "nori": "Niri",
-            "denbora": "Oraina",
-            "aditz_lagunzailea": "Zaizkit"
-        },
-        {
-            "nor": "Haiek",
-            "nori": "Hari",
-            "denbora": "Oraina",
-            "aditz_lagunzailea": "Zaizkio"
-        },
-        {
-            "nor": "Haiek",
-            "nori": "Guri",
-            "denbora": "Oraina",
-            "aditz_lagunzailea": "Zaizkigu"
-        },
-        {
-            "nor": "Haiek",
-            "nori": "Zuri",
-            "denbora": "Oraina",
-            "aditz_lagunzailea": "Zaizkizu"
-        },
-        {
-            "nor": "Haiek",
-            "nori": "Zuei",
-            "denbora": "Oraina",
-            "aditz_lagunzailea": "Zaizkizue"
-        },
-        {
-            "nor": "Haiek",
-            "nori": "Haiei",
-            "denbora": "Oraina",
-            "aditz_lagunzailea": "Zaizkie"
-        },
-        {
-            "nor": "Hura",
-            "nori": "Niri",
-            "denbora": "Iragana",
-            "aditz_lagunzailea": "Zitzaidan"
-        },
-        {
-            "nor": "Hura",
-            "nori": "Hari",
-            "denbora": "Iragana",
-            "aditz_lagunzailea": "Zitzaion"
-        },
-        {
-            "nor": "Hura",
-            "nori": "Guri",
-            "denbora": "Iragana",
-            "aditz_lagunzailea": "Zitzaigun"
-        },
-        {
-            "nor": "Hura",
-            "nori": "Zuri",
-            "denbora": "Iragana",
-            "aditz_lagunzailea": "Zitzaizun"
-        },
-        {
-            "nor": "Hura",
-            "nori": "Zuei",
-            "denbora": "Iragana",
-            "aditz_lagunzailea": "Zitzaizuen"
-        },
-        {
-            "nor": "Hura",
-            "nori": "Haiei",
-            "denbora": "Iragana",
-            "aditz_lagunzailea": "Zitzaien"
-        },
-        {
-            "nor": "Haiek",
-            "nori": "Niri",
-            "denbora": "Iragana",
-            "aditz_lagunzailea": "Zitzaizkidan"
-        },
-        {
-            "nor": "Haiek",
-            "nori": "Hari",
-            "denbora": "Iragana",
-            "aditz_lagunzailea": "Zitzaizkion"
-        },
-        {
-            "nor": "Haiek",
-            "nori": "Guri",
-            "denbora": "Iragana",
-            "aditz_lagunzailea": "Zitzaizkigun"
-        },
-        {
-            "nor": "Haiek",
-            "nori": "Zuri",
-            "denbora": "Iragana",
-            "aditz_lagunzailea": "Zitzaizkizun"
-        },
-        {
-            "nor": "Haiek",
-            "nori": "Zuei",
-            "denbora": "Iragana",
-            "aditz_lagunzailea": "Zitzaizkizuen"
-        },
-        {
-            "nor": "Haiek",
-            "nori": "Haiei",
-            "denbora": "Iragana",
-            "aditz_lagunzailea": "Zitzaizkien"
-        }
-    ],
     "nor_nork": [
         {
             "nor": "Ni",
@@ -1850,6 +1704,152 @@
             "nork": "Haiek",
             "denbora": "Iragana",
             "aditz_lagunzailea": "Zizkieten"
+        }
+    ],
+    "nor_nori": [
+        {
+            "nor": "Hura",
+            "nori": "Niri",
+            "denbora": "Oraina",
+            "aditz_lagunzailea": "Zait"
+        },
+        {
+            "nor": "Hura",
+            "nori": "Hari",
+            "denbora": "Oraina",
+            "aditz_lagunzailea": "Zaio"
+        },
+        {
+            "nor": "Hura",
+            "nori": "Guri",
+            "denbora": "Oraina",
+            "aditz_lagunzailea": "Zaigu"
+        },
+        {
+            "nor": "Hura",
+            "nori": "Zuri",
+            "denbora": "Oraina",
+            "aditz_lagunzailea": "Zaizu"
+        },
+        {
+            "nor": "Hura",
+            "nori": "Zuei",
+            "denbora": "Oraina",
+            "aditz_lagunzailea": "Zaizue"
+        },
+        {
+            "nor": "Hura",
+            "nori": "Haiei",
+            "denbora": "Oraina",
+            "aditz_lagunzailea": "Zaie"
+        },
+        {
+            "nor": "Haiek",
+            "nori": "Niri",
+            "denbora": "Oraina",
+            "aditz_lagunzailea": "Zaizkit"
+        },
+        {
+            "nor": "Haiek",
+            "nori": "Hari",
+            "denbora": "Oraina",
+            "aditz_lagunzailea": "Zaizkio"
+        },
+        {
+            "nor": "Haiek",
+            "nori": "Guri",
+            "denbora": "Oraina",
+            "aditz_lagunzailea": "Zaizkigu"
+        },
+        {
+            "nor": "Haiek",
+            "nori": "Zuri",
+            "denbora": "Oraina",
+            "aditz_lagunzailea": "Zaizkizu"
+        },
+        {
+            "nor": "Haiek",
+            "nori": "Zuei",
+            "denbora": "Oraina",
+            "aditz_lagunzailea": "Zaizkizue"
+        },
+        {
+            "nor": "Haiek",
+            "nori": "Haiei",
+            "denbora": "Oraina",
+            "aditz_lagunzailea": "Zaizkie"
+        },
+        {
+            "nor": "Hura",
+            "nori": "Niri",
+            "denbora": "Iragana",
+            "aditz_lagunzailea": "Zitzaidan"
+        },
+        {
+            "nor": "Hura",
+            "nori": "Hari",
+            "denbora": "Iragana",
+            "aditz_lagunzailea": "Zitzaion"
+        },
+        {
+            "nor": "Hura",
+            "nori": "Guri",
+            "denbora": "Iragana",
+            "aditz_lagunzailea": "Zitzaigun"
+        },
+        {
+            "nor": "Hura",
+            "nori": "Zuri",
+            "denbora": "Iragana",
+            "aditz_lagunzailea": "Zitzaizun"
+        },
+        {
+            "nor": "Hura",
+            "nori": "Zuei",
+            "denbora": "Iragana",
+            "aditz_lagunzailea": "Zitzaizuen"
+        },
+        {
+            "nor": "Hura",
+            "nori": "Haiei",
+            "denbora": "Iragana",
+            "aditz_lagunzailea": "Zitzaien"
+        },
+        {
+            "nor": "Haiek",
+            "nori": "Niri",
+            "denbora": "Iragana",
+            "aditz_lagunzailea": "Zitzaizkidan"
+        },
+        {
+            "nor": "Haiek",
+            "nori": "Hari",
+            "denbora": "Iragana",
+            "aditz_lagunzailea": "Zitzaizkion"
+        },
+        {
+            "nor": "Haiek",
+            "nori": "Guri",
+            "denbora": "Iragana",
+            "aditz_lagunzailea": "Zitzaizkigun"
+        },
+        {
+            "nor": "Haiek",
+            "nori": "Zuri",
+            "denbora": "Iragana",
+            "aditz_lagunzailea": "Zitzaizkizun"
+        },
+        {
+            "nor": "Haiek",
+            "nori": "Zuei",
+            "denbora": "Iragana",
+            "aditz_lagunzailea": "Zitzaizkizuen"
+        },
+        {
+            "nor": "Haiek",
+            "nori": "Haiei",
+            "denbora": "Iragana",
+            "aditz_lagunzailea": "Zitzaizkien"
         }
     ]
 }
