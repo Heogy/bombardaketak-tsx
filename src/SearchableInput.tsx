@@ -7,21 +7,30 @@ interface SearchableInputProps {
   al: string;
 }
 
-function levenshtein(s: string, t: string) : number{
+function levenshtein(s: string, t: string): number {
   if (s === t) {
     return 0;
   }
-  var n = s.length, m = t.length;
+  var n = s.length,
+    m = t.length;
   if (n === 0 || m === 0) {
     return n + m;
   }
-  var x = 0, y, a, b, c, d, g, h, k;
+  var x = 0,
+    y,
+    a,
+    b,
+    c,
+    d,
+    g,
+    h,
+    k;
   var p = new Array(n);
-  for (y = 0; y < n;) {
+  for (y = 0; y < n; ) {
     p[y] = ++y;
   }
 
-  for (; (x + 3) < m; x += 4) {
+  for (; x + 3 < m; x += 4) {
     var e1 = t.charCodeAt(x);
     var e2 = t.charCodeAt(x + 1);
     var e3 = t.charCodeAt(x + 2);
@@ -35,36 +44,32 @@ function levenshtein(s: string, t: string) : number{
       k = s.charCodeAt(y);
       a = p[y];
       if (a < c || b < c) {
-        c = (a > b ? b + 1 : a + 1);
-      }
-      else {
+        c = a > b ? b + 1 : a + 1;
+      } else {
         if (e1 !== k) {
           c++;
         }
       }
 
       if (c < b || d < b) {
-        b = (c > d ? d + 1 : c + 1);
-      }
-      else {
+        b = c > d ? d + 1 : c + 1;
+      } else {
         if (e2 !== k) {
           b++;
         }
       }
 
       if (b < d || g < d) {
-        d = (b > g ? g + 1 : b + 1);
-      }
-      else {
+        d = b > g ? g + 1 : b + 1;
+      } else {
         if (e3 !== k) {
           d++;
         }
       }
 
       if (d < g || h < g) {
-        g = (d > h ? h + 1 : d + 1);
-      }
-      else {
+        g = d > h ? h + 1 : d + 1;
+      } else {
         if (e4 !== k) {
           g++;
         }
@@ -77,20 +82,18 @@ function levenshtein(s: string, t: string) : number{
     }
   }
 
-  for (; x < m;) {
+  for (; x < m; ) {
     var e = t.charCodeAt(x);
     c = x;
     d = ++x;
     for (y = 0; y < n; y++) {
       a = p[y];
       if (a < c || d < c) {
-        d = (a > d ? d + 1 : a + 1);
-      }
-      else {
+        d = a > d ? d + 1 : a + 1;
+      } else {
         if (e !== s.charCodeAt(y)) {
           d = c + 1;
-        }
-        else {
+        } else {
           d = c;
         }
       }
@@ -104,20 +107,30 @@ function levenshtein(s: string, t: string) : number{
 }
 function sortByLevenshtein(searchTerm: string, array: string[]) {
   return array.sort((a: string, b: string) => {
-      const distanceA = levenshtein(searchTerm.toLocaleLowerCase(), a.toLocaleLowerCase());
-      const distanceB = levenshtein(searchTerm.toLocaleLowerCase(), b.toLocaleLowerCase());
-      return distanceA - distanceB; // Ascending order
+    const distanceA = levenshtein(
+      searchTerm.toLocaleLowerCase(),
+      a.toLocaleLowerCase(),
+    );
+    const distanceB = levenshtein(
+      searchTerm.toLocaleLowerCase(),
+      b.toLocaleLowerCase(),
+    );
+    return distanceA - distanceB; // Ascending order
   });
 }
-const SearchableInput: React.FC<SearchableInputProps> = (props: SearchableInputProps) => {
-  const [filteredOptions, setFilteredOptions] = useState<string[]>(props.options); // Filtered list
+const SearchableInput: React.FC<SearchableInputProps> = (
+  props: SearchableInputProps,
+) => {
+  const [filteredOptions, setFilteredOptions] = useState<string[]>(
+    props.options,
+  ); // Filtered list
   const [showList, setShowList] = useState<boolean>(false); // Toggle list visibility
 
   // Handle input change and filter the options
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     props.setAL(value);
-    const sorted = sortByLevenshtein(value, props.options)
+    const sorted = sortByLevenshtein(value, props.options);
 
     setFilteredOptions(sorted);
     setShowList(true); // Show the list while searching
@@ -126,7 +139,7 @@ const SearchableInput: React.FC<SearchableInputProps> = (props: SearchableInputP
   // Handle selecting an option
   const handleOptionSelect = (option: string) => {
     setShowList(false); // Hide the list after selection
-    props.setAL(option)
+    props.setAL(option);
   };
 
   // Handle blur (click outside) to close the dropdown
@@ -220,7 +233,3 @@ const styles = {
 };
 
 export default SearchableInput;
-
-
-
-

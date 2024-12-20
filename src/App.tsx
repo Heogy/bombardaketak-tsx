@@ -1,6 +1,6 @@
-import './App.css';
-import NorNoriNork from './nor-nori-nork';
-import { Analytics } from "@vercel/analytics/react"
+import "./App.css";
+import NorNoriNork from "./nor-nori-nork";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
