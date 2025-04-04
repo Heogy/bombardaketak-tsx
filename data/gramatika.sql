@@ -253,6 +253,19 @@ Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'G
 Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Zuek', 'Ditzazuen', 'Orain subjuntiboa');
 Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Haiek', 'Ditzaten', 'Orain subjuntiboa');
 
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Nik', 'Nuke', 'Conditional Présent');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuk', 'Zenuke', 'Conditional Présent');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Hark', 'Luke', 'Conditional Présent');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Guk', 'Genuke', 'Conditional Présent');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuek', 'Zenukete', 'Conditional Présent');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Haiek', 'Lukete', 'Conditional Présent');
+
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Nik', 'Nituzke', 'Conditional Présent');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Zuk', 'Zenituzke', 'Conditional Présent');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Hark', 'Lituzke', 'Conditional Présent');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Guk', 'Genituzke', 'Conditional Présent');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Zuek', 'Zenituzkete', 'Conditional Présent');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Haiek', 'Lituzkete', 'Conditional Présent');
 Create table nor_nori (
     nor TEXT,
     nori TEXT,
