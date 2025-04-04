@@ -44,6 +44,7 @@ Insert into denbora (denbora) values ('Iragan ahalera');
 Insert into denbora (denbora) values ('Alegiazko ahalera');
 Insert into denbora (denbora) values ('Orain subjuntiboa');
 Insert into denbora (denbora) values ('Iragan subjuntiboa');
+Insert into denbora (denbora) values ('Conditional Présent');
 
 create table nor (
     nor TEXT,
@@ -105,6 +106,13 @@ Insert into nor (nor, aditz_lagunzailea, denbora) values ('Hura', 'Zedin', 'Irag
 Insert into nor (nor, aditz_lagunzailea, denbora) values ('Gu', 'Gintezen', 'Iragan subjuntiboa');
 Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zuek', 'Zintezten', 'Iragan subjuntiboa');
 Insert into nor (nor, aditz_lagunzailea, denbora) values ('Haiek', 'Zitezen', 'Iragan subjuntiboa');
+
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Ni', 'Nintzateke', 'Conditional Présent');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zu', 'Zinateke', 'Conditional Présent');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Hura', 'Litzateke', 'Conditional Présent');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Gu', 'Ginateke', 'Conditional Présent');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zuek', 'Zinatekete', 'Conditional Présent');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Haiek', 'Lirateke', 'Conditional Présent');
 
 Create table nor_nork (
     nor TEXT,
