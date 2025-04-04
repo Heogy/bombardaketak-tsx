@@ -44,7 +44,7 @@ Insert into denbora (denbora) values ('Iragan ahalera');
 Insert into denbora (denbora) values ('Alegiazko ahalera');
 Insert into denbora (denbora) values ('Orain subjuntiboa');
 Insert into denbora (denbora) values ('Iragan subjuntiboa');
-Insert into denbora (denbora) values ('Conditional Présent');
+Insert into denbora (denbora) values ('Baldintza Orainaldia');
 
 create table nor (
     nor TEXT,
@@ -107,12 +107,12 @@ Insert into nor (nor, aditz_lagunzailea, denbora) values ('Gu', 'Gintezen', 'Ira
 Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zuek', 'Zintezten', 'Iragan subjuntiboa');
 Insert into nor (nor, aditz_lagunzailea, denbora) values ('Haiek', 'Zitezen', 'Iragan subjuntiboa');
 
-Insert into nor (nor, aditz_lagunzailea, denbora) values ('Ni', 'Nintzateke', 'Conditional Présent');
-Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zu', 'Zinateke', 'Conditional Présent');
-Insert into nor (nor, aditz_lagunzailea, denbora) values ('Hura', 'Litzateke', 'Conditional Présent');
-Insert into nor (nor, aditz_lagunzailea, denbora) values ('Gu', 'Ginateke', 'Conditional Présent');
-Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zuek', 'Zinatekete', 'Conditional Présent');
-Insert into nor (nor, aditz_lagunzailea, denbora) values ('Haiek', 'Lirateke', 'Conditional Présent');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Ni', 'Nintzateke', 'Baldintza Orainaldia');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zu', 'Zinateke', 'Baldintza Orainaldia');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Hura', 'Litzateke', 'Baldintza Orainaldia');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Gu', 'Ginateke', 'Baldintza Orainaldia');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Zuek', 'Zinatekete', 'Baldintza Orainaldia');
+Insert into nor (nor, aditz_lagunzailea, denbora) values ('Haiek', 'Lirateke', 'Baldintza Orainaldia');
 
 Create table nor_nork (
     nor TEXT,
@@ -253,19 +253,19 @@ Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'G
 Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Zuek', 'Ditzazuen', 'Orain subjuntiboa');
 Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Haiek', 'Ditzaten', 'Orain subjuntiboa');
 
-Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Nik', 'Nuke', 'Conditional Présent');
-Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuk', 'Zenuke', 'Conditional Présent');
-Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Hark', 'Luke', 'Conditional Présent');
-Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Guk', 'Genuke', 'Conditional Présent');
-Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuek', 'Zenukete', 'Conditional Présent');
-Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Haiek', 'Lukete', 'Conditional Présent');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Nik', 'Nuke', 'Baldintza Orainaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuk', 'Zenuke', 'Baldintza Orainaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Hark', 'Luke', 'Baldintza Orainaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Guk', 'Genuke', 'Baldintza Orainaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Zuek', 'Zenukete', 'Baldintza Orainaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Hura', 'Haiek', 'Lukete', 'Baldintza Orainaldia');
 
-Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Nik', 'Nituzke', 'Conditional Présent');
-Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Zuk', 'Zenituzke', 'Conditional Présent');
-Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Hark', 'Lituzke', 'Conditional Présent');
-Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Guk', 'Genituzke', 'Conditional Présent');
-Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Zuek', 'Zenituzkete', 'Conditional Présent');
-Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Haiek', 'Lituzkete', 'Conditional Présent');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Nik', 'Nituzke', 'Baldintza Orainaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Zuk', 'Zenituzke', 'Baldintza Orainaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Hark', 'Lituzke', 'Baldintza Orainaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Guk', 'Genituzke', 'Baldintza Orainaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Zuek', 'Zenituzkete', 'Baldintza Orainaldia');
+Insert into nor_nork (nor, nork, aditz_lagunzailea, denbora) values ('Haiek', 'Haiek', 'Lituzkete', 'Baldintza Orainaldia');
 Create table nor_nori (
     nor TEXT,
     nori TEXT,
