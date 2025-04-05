@@ -23,16 +23,8 @@
   "scripts": {
     "start": "npm run data && react-scripts start",
     "build": "npm run data && react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "data": "node data/exporter.js",
     "lint": "tslint"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
