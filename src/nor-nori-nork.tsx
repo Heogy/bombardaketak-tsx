@@ -28,14 +28,20 @@ const all: struc[] = [
 ];
 
 const NorNoriNork: React.FC = () => {
-  const [nor, setNor] = useState<string>("Haiek");
-  const [nori, setNori] = useState<string>("Guri");
-  const [nork, setNork] = useState<string>("Zuek");
-  const [denbora, setDenbora] = useState<string>("Oraina");
-  const [forma, setForma] = useState<string>("nor_nori_nork");
-  const [al, setAL] = useState<string>("");
+  const [nor, setNor] = useState<string>("");
+  const [nori, setNori] = useState<string>("");
+  const [nork, setNork] = useState<string>("");
+  const [denbora, setDenbora] = useState<string>("");
+  const [forma, setForma] = useState<string>("");
+   // const [al, setAL] = useState<string>('')
+  const [al, setAL] = useState<string>(() => {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('al') || '';
+   });
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   useEffect(() => {
+  
 
     // ezinezko arrauak
     var item: string | undefined;
@@ -64,123 +70,147 @@ const NorNoriNork: React.FC = () => {
     }
     if (item !== undefined) {
       setAL(item);
+      setErrorMsg(null)
     } else {
     if(forma === "nor_nori_nork" && (["Ni", "Zu", "Gu", "Zuek"].some(s => s === nor))){
-      setAL("Nor hura ala haiek, nor nori nork forman")
+      setErrorMsg("Nor hura ala haiek, nor nori nork forman")
+      setAL("");
       return;
     }
 
     if(nor === 'Ni' && nork === 'Nik'){
-      setAL("Ni-Nik ezin da <3")
+      setErrorMsg("Ni-Nik ezin da <3")
+setAL("");
       return;
     }
     if(nor === 'Ni' && nork === 'Guk'){
-      setAL("Ni-Guk ezin da <3")
+      setErrorMsg("Ni-Guk ezin da <3")
+setAL("");
       return;
     }
 
     if(nor === 'Ni' && nori === 'Niri'){
-      setAL("Ni-Niri ezin da <3")
+      setErrorMsg("Ni-Niri ezin da <3")
+setAL("");
       return;
     }
     if(nor === 'Ni' && nori === 'Guri'){
-      setAL("Ni-Guri ezin da <3")
+      setErrorMsg("Ni-Guri ezin da <3")
+setAL("");
       return;
     }
 
     if(nork === 'Nik' && nori === 'Niri'){
-      setAL("Nik-Niri ezin da <3")
+      setErrorMsg("Nik-Niri ezin da <3")
+setAL("");
       return;
     }
     if(nork === 'Nik' && nori === 'Guri'){
-      setAL("Nik-Guri ezin da <3")
+      setErrorMsg("Nik-Guri ezin da <3")
+setAL("");
       return;
     }
 
     if(nor === 'Gu' && nork === 'Nik'){
-      setAL("Gu-Nik ezin da <3")
+      setErrorMsg("Gu-Nik ezin da <3")
+setAL("");
       return;
     }
     if(nor === 'Gu' && nork === 'Guk'){
-      setAL("Gu-Guk ezin da <3")
+      setErrorMsg("Gu-Guk ezin da <3")
+setAL("");
       return;
     }
 
     if(nor === 'Gu' && nori === 'Niri'){
-      setAL("Gu-Niri ezin da <3")
+      setErrorMsg("Gu-Niri ezin da <3")
+setAL("");
       return;
     }
     if(nor === 'Gu' && nori === 'Guri'){
-      setAL("Gu-Guri ezin da <3")
+      setErrorMsg("Gu-Guri ezin da <3")
+setAL("");
       return;
     }
 
     if(nork === 'Guk' && nori === 'Niri'){
-      setAL("Guk-Niri ezin da <3")
+      setErrorMsg("Guk-Niri ezin da <3")
+setAL("");
       return;
     }
     if(nork === 'Guk' && nori === 'Guri'){
-      setAL("Guk-Guri ezin da <3")
+      setErrorMsg("Guk-Guri ezin da <3")
+setAL("");
       return;
     }
 
 
     if(nor === 'Zu' && nork === 'Zuk'){
-      setAL("Zu-Zuk ezin da <3")
+      setErrorMsg("Zu-Zuk ezin da <3")
+setAL("");
       return;
     }
     if(nor === 'Zu' && nork === 'Zuek'){
-      setAL("Zu-Zuek ezin da <3")
+      setErrorMsg("Zu-Zuek ezin da <3")
+setAL("");
       return;
     }
     if(nor === 'Zuek' && nork === 'Zuk'){
-      setAL("Zuek-Zuk ezin da <3")
+      setErrorMsg("Zuek-Zuk ezin da <3")
+setAL("");
       return;
     }
     if(nor === 'Zuek' && nork === 'Zuek'){
-      setAL("Zuek-Zuek ezin da <3")
+      setErrorMsg("Zuek-Zuek ezin da <3")
+setAL("");
       return;
     }
-
 
 
     if(nor === 'Zu' && nori === 'Zuri'){
-      setAL("Zu-Zuri ezin da <3")
+      setErrorMsg("Zu-Zuri ezin da <3")
+setAL("");
       return;
     }
     if(nor === 'Zu' && nori === 'Zuei'){
-      setAL("Zu-Zuei ezin da <3")
+      setErrorMsg("Zu-Zuei ezin da <3")
+setAL("");
       return;
     }
     if(nor === 'Zuek' && nori === 'Zuri'){
-      setAL("Zuek-Zuri ezin da <3")
+      setErrorMsg("Zuek-Zuri ezin da <3")
+setAL("");
       return;
     }
     if(nor === 'Zuek' && nori === 'Zuei'){
-      setAL("Zuek-Zuei ezin da <3")
+      setErrorMsg("Zuek-Zuei ezin da <3")
+setAL("");
       return;
     }
-
-
 
 
     if(nork === 'Zuk' && nori === 'Zuri'){
-      setAL("Zuk-Zuri ezin da <3")
+      setErrorMsg("Zuk-Zuri ezin da <3")
+setAL("");
       return;
     }
     if(nork === 'Zuk' && nori === 'Zuei'){
-      setAL("Zuk-Zuei ezin da <3")
+      setErrorMsg("Zuk-Zuei ezin da <3")
+setAL("");
       return;
     }
     if(nork === 'Zuek' && nori === 'Zuri'){
-      setAL("Zuek-Zuri ezin da <3")
+      setErrorMsg("Zuek-Zuri ezin da <3")
+setAL("");
       return;
     }
     if(nork === 'Zuek' && nori === 'Zuei'){
-      setAL("Zuek-Zuei ezin da <3")
+      setErrorMsg("Zuek-Zuei ezin da <3")
+setAL("");
       return;
     }
-      setAL("Ez dut sartu aditz langutzaile hori oraindik");
+      setErrorMsg("Ez dut sartu aditz langutzaile hori oraindik");
+setAL("");
     }
   }, [forma, denbora, nor, nori, nork]);
 
@@ -195,6 +225,16 @@ const NorNoriNork: React.FC = () => {
       if (item.nori !== undefined) setNori(item.nori);
       if (item.nork !== undefined) setNork(item.nork);
     }
+const params = new URLSearchParams(window.location.search);
+
+    if (al) {
+      params.set('al', al);
+    } else {
+      params.delete('al');
+    }
+
+    const newUrl = `${window.location.pathname}?${params.toString()}`;
+    window.history.replaceState({}, '', newUrl);
   }, [al]);
 
   const norList: string[] = aditzLaguntzaileak.nor_io.map((a) => a.nor);
@@ -268,6 +308,7 @@ const NorNoriNork: React.FC = () => {
             setAL={setAL}
             al={al}
           />
+        {errorMsg !== null ? <p>{errorMsg}</p>: null}
         </div>
         <div id="forma">
           <label htmlFor="forma" style={styles.label}>Forma: </label>
